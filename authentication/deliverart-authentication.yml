@@ -1,0 +1,28 @@
+generated: '2026-07-18'
+method: derived
+source: openapi/deliverart-openapi.yml
+summary:
+  types:
+  - apiKey
+  - oauth2
+  api_key_in:
+  - header
+  oauth2_flows:
+  - password
+schemes:
+- name: apiKey
+  type: apiKey
+  in: header
+  parameter: X-Deliverart-ApiKey
+  description: API key issued by the Deliverart team, sent in the X-Deliverart-ApiKey header.
+  sources:
+  - openapi/deliverart-openapi.yml
+- name: oauth2
+  type: oauth2
+  flows:
+  - flow: password
+    tokenUrl: https://auth.deliverart.it/oauth
+    scopes: 44
+  description: OAuth2 password grant. Token endpoint is on the auth host.
+  sources:
+  - openapi/deliverart-openapi.yml
