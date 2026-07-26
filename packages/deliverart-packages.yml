@@ -1,0 +1,277 @@
+generated: '2026-07-18'
+method: searched
+source: https://www.npmjs.com/org/deliverart
+
+summary:
+  total: 33
+  languages:
+  - javascript
+  registries:
+  - npm
+  scope: '@deliverart'
+  note: Modular first-party JavaScript SDK suite (one package per product area), actively maintained.
+packages:
+- language: javascript
+  registry: npm
+  name: '@deliverart/epos'
+  url: https://www.npmjs.com/package/@deliverart/epos
+  install: npm install @deliverart/epos
+  version: 0.1.1
+  description: Transport-neutral Epson ePOS printing primitives
+  official: true
+- language: javascript
+  registry: npm
+  name: '@deliverart/order-receipt'
+  url: https://www.npmjs.com/package/@deliverart/order-receipt
+  install: npm install @deliverart/order-receipt
+  version: 0.1.2
+  description: Compile Deliverart orders and receipt templates into transport-neutral ePOS documents
+  official: true
+- language: javascript
+  registry: npm
+  name: '@deliverart/sdk-js-api-token'
+  url: https://www.npmjs.com/package/@deliverart/sdk-js-api-token
+  install: npm install @deliverart/sdk-js-api-token
+  version: 2.25.2
+  description: Deliverart JavaScript SDK for API Token Management
+  official: true
+- language: javascript
+  registry: npm
+  name: '@deliverart/sdk-js-authentication'
+  url: https://www.npmjs.com/package/@deliverart/sdk-js-authentication
+  install: npm install @deliverart/sdk-js-authentication
+  version: 2.25.2
+  description: Authentication module for DeliverArt SDK
+  official: true
+- language: javascript
+  registry: npm
+  name: '@deliverart/sdk-js-company'
+  url: https://www.npmjs.com/package/@deliverart/sdk-js-company
+  install: npm install @deliverart/sdk-js-company
+  version: 2.25.2
+  description: Deliverart JavaScript SDK for Company Management
+  official: true
+- language: javascript
+  registry: npm
+  name: '@deliverart/sdk-js-core'
+  url: https://www.npmjs.com/package/@deliverart/sdk-js-core
+  install: npm install @deliverart/sdk-js-core
+  version: 2.25.2
+  description: Core SDK for DeliverArt, providing essential functionalities and utilities.
+  official: true
+- language: javascript
+  registry: npm
+  name: '@deliverart/sdk-js-customer'
+  url: https://www.npmjs.com/package/@deliverart/sdk-js-customer
+  install: npm install @deliverart/sdk-js-customer
+  version: 2.25.2
+  description: Deliverart JavaScript SDK for Customer and CustomerAddress Management
+  official: true
+- language: javascript
+  registry: npm
+  name: '@deliverart/sdk-js-delivery'
+  url: https://www.npmjs.com/package/@deliverart/sdk-js-delivery
+  install: npm install @deliverart/sdk-js-delivery
+  version: 2.25.2
+  description: Deliverart JavaScript SDK for Delivery Management
+  official: true
+- language: javascript
+  registry: npm
+  name: '@deliverart/sdk-js-email-notification-configuration'
+  url: https://www.npmjs.com/package/@deliverart/sdk-js-email-notification-configuration
+  install: npm install @deliverart/sdk-js-email-notification-configuration
+  version: 2.25.2
+  description: Deliverart JavaScript SDK for Email Notification Configuration
+  official: true
+- language: javascript
+  registry: npm
+  name: '@deliverart/sdk-js-error-handler'
+  url: https://www.npmjs.com/package/@deliverart/sdk-js-error-handler
+  install: npm install @deliverart/sdk-js-error-handler
+  version: 2.25.2
+  description: Error handling utilities for Deliverart SDK in JavaScript
+  official: true
+- language: javascript
+  registry: npm
+  name: '@deliverart/sdk-js-global-types'
+  url: https://www.npmjs.com/package/@deliverart/sdk-js-global-types
+  install: npm install @deliverart/sdk-js-global-types
+  version: 2.25.2
+  description: Global types for Deliverart SDK in JavaScript
+  official: true
+- language: javascript
+  registry: npm
+  name: '@deliverart/sdk-js-image'
+  url: https://www.npmjs.com/package/@deliverart/sdk-js-image
+  install: npm install @deliverart/sdk-js-image
+  version: 2.25.2
+  description: Deliverart JavaScript SDK for Image Management
+  official: true
+- language: javascript
+  registry: npm
+  name: '@deliverart/sdk-js-integration'
+  url: https://www.npmjs.com/package/@deliverart/sdk-js-integration
+  install: npm install @deliverart/sdk-js-integration
+  version: 2.25.2
+  description: Deliverart JavaScript SDK for Integration Management
+  official: true
+- language: javascript
+  registry: npm
+  name: '@deliverart/sdk-js-integration-types'
+  url: https://www.npmjs.com/package/@deliverart/sdk-js-integration-types
+  install: npm install @deliverart/sdk-js-integration-types
+  version: 2.25.2
+  description: Deliverart JavaScript SDK shared integration types and schemas
+  official: true
+- language: javascript
+  registry: npm
+  name: '@deliverart/sdk-js-lead'
+  url: https://www.npmjs.com/package/@deliverart/sdk-js-lead
+  install: npm install @deliverart/sdk-js-lead
+  version: 2.25.2
+  description: Deliverart JavaScript SDK for Lead Management
+  official: true
+- language: javascript
+  registry: npm
+  name: '@deliverart/sdk-js-menu'
+  url: https://www.npmjs.com/package/@deliverart/sdk-js-menu
+  install: npm install @deliverart/sdk-js-menu
+  version: 2.25.2
+  description: Deliverart JavaScript SDK for Menu Management
+  official: true
+- language: javascript
+  registry: npm
+  name: '@deliverart/sdk-js-order'
+  url: https://www.npmjs.com/package/@deliverart/sdk-js-order
+  install: npm install @deliverart/sdk-js-order
+  version: 2.25.2
+  description: Deliverart JavaScript SDK for Order Management
+  official: true
+- language: javascript
+  registry: npm
+  name: '@deliverart/sdk-js-order-print-settings'
+  url: https://www.npmjs.com/package/@deliverart/sdk-js-order-print-settings
+  install: npm install @deliverart/sdk-js-order-print-settings
+  version: 2.25.2
+  description: Deliverart JavaScript SDK for Order Print Settings Management
+  official: true
+- language: javascript
+  registry: npm
+  name: '@deliverart/sdk-js-payment'
+  url: https://www.npmjs.com/package/@deliverart/sdk-js-payment
+  install: npm install @deliverart/sdk-js-payment
+  version: 2.25.2
+  description: Deliverart JavaScript SDK for Payment Management
+  official: true
+- language: javascript
+  registry: npm
+  name: '@deliverart/sdk-js-plugin-oauth'
+  url: https://www.npmjs.com/package/@deliverart/sdk-js-plugin-oauth
+  install: npm install @deliverart/sdk-js-plugin-oauth
+  version: 0.0.3
+  description: OAuth plugin for DeliverArt SDK, enabling OAuth authentication and integration.
+  official: true
+- language: javascript
+  registry: npm
+  name: '@deliverart/sdk-js-point-of-sale'
+  url: https://www.npmjs.com/package/@deliverart/sdk-js-point-of-sale
+  install: npm install @deliverart/sdk-js-point-of-sale
+  version: 2.25.2
+  description: Deliverart JavaScript SDK for Point of Sale Management
+  official: true
+- language: javascript
+  registry: npm
+  name: '@deliverart/sdk-js-printer'
+  url: https://www.npmjs.com/package/@deliverart/sdk-js-printer
+  install: npm install @deliverart/sdk-js-printer
+  version: 2.25.2
+  description: Deliverart JavaScript SDK for Printer Management
+  official: true
+- language: javascript
+  registry: npm
+  name: '@deliverart/sdk-js-receipt-template'
+  url: https://www.npmjs.com/package/@deliverart/sdk-js-receipt-template
+  install: npm install @deliverart/sdk-js-receipt-template
+  version: 2.25.2
+  description: Deliverart JavaScript SDK for versioned receipt templates
+  official: true
+- language: javascript
+  registry: npm
+  name: '@deliverart/sdk-js-sales-mode'
+  url: https://www.npmjs.com/package/@deliverart/sdk-js-sales-mode
+  install: npm install @deliverart/sdk-js-sales-mode
+  version: 2.25.2
+  description: Deliverart JavaScript SDK for Sales Modes Management
+  official: true
+- language: javascript
+  registry: npm
+  name: '@deliverart/sdk-js-stats'
+  url: https://www.npmjs.com/package/@deliverart/sdk-js-stats
+  install: npm install @deliverart/sdk-js-stats
+  version: 2.25.2
+  description: Deliverart JavaScript SDK for Stats
+  official: true
+- language: javascript
+  registry: npm
+  name: '@deliverart/sdk-js-subscription'
+  url: https://www.npmjs.com/package/@deliverart/sdk-js-subscription
+  install: npm install @deliverart/sdk-js-subscription
+  version: 2.25.2
+  description: Deliverart JavaScript SDK for Subscription Management
+  official: true
+- language: javascript
+  registry: npm
+  name: '@deliverart/sdk-js-user'
+  url: https://www.npmjs.com/package/@deliverart/sdk-js-user
+  install: npm install @deliverart/sdk-js-user
+  version: 2.25.2
+  description: Deliverart JavaScript SDK for User Management
+  official: true
+- language: javascript
+  registry: npm
+  name: '@deliverart/sdk-js-webhook'
+  url: https://www.npmjs.com/package/@deliverart/sdk-js-webhook
+  install: npm install @deliverart/sdk-js-webhook
+  version: 2.25.2
+  description: Deliverart JavaScript SDK for Webhook Management
+  official: true
+- language: javascript
+  registry: npm
+  name: '@deliverart/ui-core'
+  url: https://www.npmjs.com/package/@deliverart/ui-core
+  install: npm install @deliverart/ui-core
+  version: 0.1.0
+  description: Deliverart shared app-neutral React and MUI primitives
+  official: true
+- language: javascript
+  registry: npm
+  name: '@deliverart/ui-domain'
+  url: https://www.npmjs.com/package/@deliverart/ui-domain
+  install: npm install @deliverart/ui-domain
+  version: 0.1.0
+  description: Deliverart shared domain display components
+  official: true
+- language: javascript
+  registry: npm
+  name: '@deliverart/ui-logos'
+  url: https://www.npmjs.com/package/@deliverart/ui-logos
+  install: npm install @deliverart/ui-logos
+  version: 0.1.0
+  description: Deliverart shared SVG logos and provider logo registry
+  official: true
+- language: javascript
+  registry: npm
+  name: '@deliverart/ui-theme'
+  url: https://www.npmjs.com/package/@deliverart/ui-theme
+  install: npm install @deliverart/ui-theme
+  version: 0.1.0
+  description: Deliverart shared MUI theme primitives
+  official: true
+- language: javascript
+  registry: npm
+  name: '@deliverart/webhook'
+  url: https://www.npmjs.com/package/@deliverart/webhook
+  install: npm install @deliverart/webhook
+  version: 2.2.0
+  description: Deliverart JavaScript SDK for Webhook Management
+  official: true

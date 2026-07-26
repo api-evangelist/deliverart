@@ -1,0 +1,13 @@
+overlay: 1.0.0
+info:
+  title: API Evangelist enhancements for Deliverart
+  version: 1.0.0
+extends: openapi/deliverart-openapi.yml
+actions:
+- target: $.info
+  update:
+    x-apievangelist-enriched: true
+    x-apievangelist-source: https://apidoc.deliverart.it/
+- target: $.info
+  update:
+    x-apisjson-provider: deliverart

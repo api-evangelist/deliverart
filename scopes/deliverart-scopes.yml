@@ -1,0 +1,276 @@
+generated: '2026-07-18'
+method: derived
+source: openapi/deliverart-openapi.yml
+docs: https://apidoc.deliverart.it/
+schemes:
+- name: oauth2
+  source: openapi/deliverart-openapi.yml
+  flows:
+  - flow: password
+    tokenUrl: https://auth.deliverart.it/oauth
+  description: OAuth2 password grant. Token endpoint is on the auth host.
+scopes:
+- scope: address_admin
+  description: Manage addresses
+  flows:
+  - password
+  sources:
+  - openapi/deliverart-openapi.yml
+- scope: address_create
+  description: Create addresses
+  flows:
+  - password
+  sources:
+  - openapi/deliverart-openapi.yml
+- scope: address_read
+  description: Read addresses
+  flows:
+  - password
+  sources:
+  - openapi/deliverart-openapi.yml
+- scope: company_admin
+  description: Full company management
+  flows:
+  - password
+  sources:
+  - openapi/deliverart-openapi.yml
+- scope: company_pos_read
+  description: Read company points of sale
+  flows:
+  - password
+  sources:
+  - openapi/deliverart-openapi.yml
+- scope: company_read
+  description: Read company
+  flows:
+  - password
+  sources:
+  - openapi/deliverart-openapi.yml
+- scope: create_customer
+  description: Create customers
+  flows:
+  - password
+  sources:
+  - openapi/deliverart-openapi.yml
+- scope: customer_address_create
+  description: Create customer addresses
+  flows:
+  - password
+  sources:
+  - openapi/deliverart-openapi.yml
+- scope: customer_address_read
+  description: Read customer addresses
+  flows:
+  - password
+  sources:
+  - openapi/deliverart-openapi.yml
+- scope: customer_address_update
+  description: Update customer addresses
+  flows:
+  - password
+  sources:
+  - openapi/deliverart-openapi.yml
+- scope: customer_admin
+  description: Full customer management
+  flows:
+  - password
+  sources:
+  - openapi/deliverart-openapi.yml
+- scope: customer_business_profile_create
+  description: Create customer business profiles
+  flows:
+  - password
+  sources:
+  - openapi/deliverart-openapi.yml
+- scope: customer_business_profile_read
+  description: Read customer business profiles
+  flows:
+  - password
+  sources:
+  - openapi/deliverart-openapi.yml
+- scope: customer_business_profile_update
+  description: Update customer business profiles
+  flows:
+  - password
+  sources:
+  - openapi/deliverart-openapi.yml
+- scope: customer_orders_read
+  description: Read customer orders
+  flows:
+  - password
+  sources:
+  - openapi/deliverart-openapi.yml
+- scope: customer_read
+  description: Read customers
+  flows:
+  - password
+  sources:
+  - openapi/deliverart-openapi.yml
+- scope: customer_update
+  description: Update customers
+  flows:
+  - password
+  sources:
+  - openapi/deliverart-openapi.yml
+- scope: deliveries_fee_read
+  description: Read delivery fees
+  flows:
+  - password
+  sources:
+  - openapi/deliverart-openapi.yml
+- scope: deliveries_read
+  description: Read deliveries
+  flows:
+  - password
+  sources:
+  - openapi/deliverart-openapi.yml
+- scope: delivery_admin
+  description: Full delivery management
+  flows:
+  - password
+  sources:
+  - openapi/deliverart-openapi.yml
+- scope: delivery_fee_admin
+  description: Manage delivery fees
+  flows:
+  - password
+  sources:
+  - openapi/deliverart-openapi.yml
+- scope: delivery_fee_read
+  description: Read delivery fees
+  flows:
+  - password
+  sources:
+  - openapi/deliverart-openapi.yml
+- scope: delivery_read
+  description: Read deliveries
+  flows:
+  - password
+  sources:
+  - openapi/deliverart-openapi.yml
+- scope: menu_admin
+  description: Full menu management
+  flows:
+  - password
+  sources:
+  - openapi/deliverart-openapi.yml
+- scope: menu_item_admin
+  description: Manage menu items
+  flows:
+  - password
+  sources:
+  - openapi/deliverart-openapi.yml
+- scope: menu_item_allergen_admin
+  description: Manage menu allergens
+  flows:
+  - password
+  sources:
+  - openapi/deliverart-openapi.yml
+- scope: menu_item_category_admin
+  description: Manage menu categories
+  flows:
+  - password
+  sources:
+  - openapi/deliverart-openapi.yml
+- scope: menu_item_ingredient_admin
+  description: Manage menu ingredients
+  flows:
+  - password
+  sources:
+  - openapi/deliverart-openapi.yml
+- scope: menu_read
+  description: Read menu
+  flows:
+  - password
+  sources:
+  - openapi/deliverart-openapi.yml
+- scope: order_abort
+  description: Abort orders
+  flows:
+  - password
+  sources:
+  - openapi/deliverart-openapi.yml
+- scope: order_admin
+  description: Full order management
+  flows:
+  - password
+  sources:
+  - openapi/deliverart-openapi.yml
+- scope: order_cancel
+  description: Cancel orders
+  flows:
+  - password
+  sources:
+  - openapi/deliverart-openapi.yml
+- scope: order_create
+  description: Create orders
+  flows:
+  - password
+  sources:
+  - openapi/deliverart-openapi.yml
+- scope: order_list
+  description: List orders
+  flows:
+  - password
+  sources:
+  - openapi/deliverart-openapi.yml
+- scope: order_read
+  description: Read orders
+  flows:
+  - password
+  sources:
+  - openapi/deliverart-openapi.yml
+- scope: order_update
+  description: Update orders
+  flows:
+  - password
+  sources:
+  - openapi/deliverart-openapi.yml
+- scope: point_of_sale_admin
+  description: Full point-of-sale management
+  flows:
+  - password
+  sources:
+  - openapi/deliverart-openapi.yml
+- scope: point_of_sale_read
+  description: Read points of sale
+  flows:
+  - password
+  sources:
+  - openapi/deliverart-openapi.yml
+- scope: read_customer
+  description: Read customer
+  flows:
+  - password
+  sources:
+  - openapi/deliverart-openapi.yml
+- scope: take_away_admin
+  description: Manage take-away
+  flows:
+  - password
+  sources:
+  - openapi/deliverart-openapi.yml
+- scope: take_away_read
+  description: Read take-away
+  flows:
+  - password
+  sources:
+  - openapi/deliverart-openapi.yml
+- scope: take_away_time_read
+  description: Read take-away times
+  flows:
+  - password
+  sources:
+  - openapi/deliverart-openapi.yml
+- scope: workshifts_admin
+  description: Manage workshifts
+  flows:
+  - password
+  sources:
+  - openapi/deliverart-openapi.yml
+- scope: workshifts_read
+  description: Read workshifts
+  flows:
+  - password
+  sources:
+  - openapi/deliverart-openapi.yml

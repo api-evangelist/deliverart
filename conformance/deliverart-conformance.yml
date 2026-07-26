@@ -1,0 +1,23 @@
+generated: '2026-07-18'
+method: derived
+source: openapi/deliverart-openapi.yml
+
+standards:
+- id: oauth2
+  conforms: true
+  evidence: OpenAPI securitySchemes type oauth2 (password flow) + docs
+- id: api-key-auth
+  conforms: true
+  evidence: X-Deliverart-ApiKey header scheme
+- id: rfc9457-problem-details
+  conforms: false
+  evidence: Custom JSON error envelope, not application/problem+json
+- id: pagination
+  conforms: true
+  evidence: page/totalItems/pageSize on list endpoints
+- id: idempotency
+  conforms: false
+  evidence: No idempotency-key mechanism documented
+- id: openidconnect
+  conforms: false
+  evidence: OAuth2 password grant only; no OIDC discovery

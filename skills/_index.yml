@@ -1,0 +1,12 @@
+generated: '2026-07-18'
+method: generated
+source: openapi/deliverart-openapi.yml
+skills:
+  - file: deliverart-create-and-fulfil-order.md
+    name: Create and fulfil a delivery order
+    api: openapi/deliverart-openapi.yml
+    operations: [ordersInit, ordersUpdateCustomer, ordersUpdateItems, ordersUpdatePayment, reservationReserveDeliveryTime, deliveriesCreate, deliveriesTakeCharge, deliveriesStart, deliveriesOrderDelivered, deliveriesEnd]
+  - file: deliverart-manage-menu.md
+    name: Build and maintain a menu
+    api: openapi/deliverart-openapi.yml
+    operations: [menuCreate, menuCategoriesCreate, menuIngredientsCreate, menuAllergensCreate, menuItemsCreate, menuItemsTranslate, menuItemsSuspend, menuItemsResume]

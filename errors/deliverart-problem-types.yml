@@ -1,0 +1,29 @@
+generated: '2026-07-18'
+method: derived
+source: openapi/deliverart-openapi.yml
+format: custom-json-envelope
+docs: https://apidoc.deliverart.it/
+
+envelope:
+  fields:
+  - message
+  - code
+  - errors
+  content_type: application/json
+  rfc9457: false
+problems:
+- status: 400
+  title: Invalid request or credentials
+  meaning: Malformed request or invalid authentication credentials.
+- status: 401
+  title: Unauthorized
+  meaning: Missing/expired token or API key, or insufficient scope.
+- status: 404
+  title: Not found
+  meaning: Referenced resource does not exist.
+- status: 409
+  title: Conflict
+  meaning: Request conflicts with current resource state.
+- status: 422
+  title: Validation failure
+  meaning: Request body failed validation.

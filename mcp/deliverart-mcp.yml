@@ -1,0 +1,402 @@
+generated: '2026-07-18'
+method: derived
+source: openapi/deliverart-openapi.yml
+status: candidate
+
+server:
+  name: deliverart
+  transport: http
+  note: No official hosted MCP server found; candidate tool list derived one-per-operation from the generated
+    OpenAPI.
+tool_count: 130
+tools:
+- name: registrationRegisterCustomer
+  description: Registration — Register customer
+  source_operation: openapi/deliverart-openapi.yml#registrationRegisterCustomer
+- name: registrationRegisterCourier
+  description: Registration — Register courier
+  source_operation: openapi/deliverart-openapi.yml#registrationRegisterCourier
+- name: registrationActivate
+  description: Registration — Activate
+  source_operation: openapi/deliverart-openapi.yml#registrationActivate
+- name: passwordResetRequestCode
+  description: Password reset — Request code
+  source_operation: openapi/deliverart-openapi.yml#passwordResetRequestCode
+- name: passwordResetCheckValidCode
+  description: Password reset — Check valid code
+  source_operation: openapi/deliverart-openapi.yml#passwordResetCheckValidCode
+- name: passwordResetResetPassword
+  description: Password reset — Reset password
+  source_operation: openapi/deliverart-openapi.yml#passwordResetResetPassword
+- name: meInfo
+  description: Me — Info
+  source_operation: openapi/deliverart-openapi.yml#meInfo
+- name: meUpdate
+  description: Me — Update
+  source_operation: openapi/deliverart-openapi.yml#meUpdate
+- name: meUpdatePassword
+  description: Me — Update / Password
+  source_operation: openapi/deliverart-openapi.yml#meUpdatePassword
+- name: meUpdateMobilePhoneNumber
+  description: Me — Update / Mobile phone number
+  source_operation: openapi/deliverart-openapi.yml#meUpdateMobilePhoneNumber
+- name: meVerificationMobilePhoneNumberRequest2faCode
+  description: Me — Verification / Mobile phone number / Request 2FA code
+  source_operation: openapi/deliverart-openapi.yml#meVerificationMobilePhoneNumberRequest2faCode
+- name: meVerificationMobilePhoneNumberValidate2faCode
+  description: Me — Verification / Mobile phone number / Validate 2FA code
+  source_operation: openapi/deliverart-openapi.yml#meVerificationMobilePhoneNumberValidate2faCode
+- name: meUpdateEmail
+  description: Me — Update / Email
+  source_operation: openapi/deliverart-openapi.yml#meUpdateEmail
+- name: meVerificationEmailRequest2faCode
+  description: Me — Verification / Email / Request 2FA code
+  source_operation: openapi/deliverart-openapi.yml#meVerificationEmailRequest2faCode
+- name: meVerificationEmailValidate2faCode
+  description: Me — Verification / Email / Validate 2FA code
+  source_operation: openapi/deliverart-openapi.yml#meVerificationEmailValidate2faCode
+- name: meOrderList
+  description: Me — Order / List
+  source_operation: openapi/deliverart-openapi.yml#meOrderList
+- name: meCustomerDetail
+  description: Me — Customer / Detail
+  source_operation: openapi/deliverart-openapi.yml#meCustomerDetail
+- name: meCustomerCreateProfile
+  description: Me — Customer / Create profile
+  source_operation: openapi/deliverart-openapi.yml#meCustomerCreateProfile
+- name: meCustomerRedeemProfileByPos
+  description: Me — Customer / Redeem profile / By POS
+  source_operation: openapi/deliverart-openapi.yml#meCustomerRedeemProfileByPos
+- name: meCustomerAddressList
+  description: Me — Customer address / List
+  source_operation: openapi/deliverart-openapi.yml#meCustomerAddressList
+- name: meWorkshiftList
+  description: Me — Workshift / List
+  source_operation: openapi/deliverart-openapi.yml#meWorkshiftList
+- name: mePosList
+  description: Me — POS / List
+  source_operation: openapi/deliverart-openapi.yml#mePosList
+- name: companiesDetail
+  description: Companies — Detail
+  source_operation: openapi/deliverart-openapi.yml#companiesDetail
+- name: companiesPosList
+  description: Companies — POS / List
+  source_operation: openapi/deliverart-openapi.yml#companiesPosList
+- name: pointsOfSaleDetail
+  description: Points of sale — Detail
+  source_operation: openapi/deliverart-openapi.yml#pointsOfSaleDetail
+- name: pointsOfSaleCustomersList
+  description: Points of sale — Customers / List
+  source_operation: openapi/deliverart-openapi.yml#pointsOfSaleCustomersList
+- name: pointsOfSaleWorkshiftsList
+  description: Points of sale — Workshifts / List
+  source_operation: openapi/deliverart-openapi.yml#pointsOfSaleWorkshiftsList
+- name: pointsOfSaleDeliveryFeesList
+  description: Points of sale — Delivery fees / List
+  source_operation: openapi/deliverart-openapi.yml#pointsOfSaleDeliveryFeesList
+- name: pointsOfSaleDeliveriesList
+  description: Points of sale — Deliveries / List
+  source_operation: openapi/deliverart-openapi.yml#pointsOfSaleDeliveriesList
+- name: pointsOfSaleCustomersFindByPhoneNumber
+  description: Points of sale — Customers / Find by phone number
+  source_operation: openapi/deliverart-openapi.yml#pointsOfSaleCustomersFindByPhoneNumber
+- name: pointsOfSaleInvitationAccept
+  description: Points of sale — Invitation / Accept
+  source_operation: openapi/deliverart-openapi.yml#pointsOfSaleInvitationAccept
+- name: pointsOfSaleInvitationReject
+  description: Points of sale — Invitation / Reject
+  source_operation: openapi/deliverart-openapi.yml#pointsOfSaleInvitationReject
+- name: pointsOfSaleSettingsDetail
+  description: Points of sale — Settings / Detail
+  source_operation: openapi/deliverart-openapi.yml#pointsOfSaleSettingsDetail
+- name: pointsOfSaleSettingsUpdate
+  description: Points of sale — Settings / Update
+  source_operation: openapi/deliverart-openapi.yml#pointsOfSaleSettingsUpdate
+- name: addressesDetail
+  description: Addresses — Detail
+  source_operation: openapi/deliverart-openapi.yml#addressesDetail
+- name: addressesCreateFromCoordinates
+  description: Addresses — Create / From coordinates
+  source_operation: openapi/deliverart-openapi.yml#addressesCreateFromCoordinates
+- name: addressesCreateFromGooglePlaceId
+  description: Addresses — Create / From Google place ID
+  source_operation: openapi/deliverart-openapi.yml#addressesCreateFromGooglePlaceId
+- name: customersDetail
+  description: Customers — Detail
+  source_operation: openapi/deliverart-openapi.yml#customersDetail
+- name: customersCreate
+  description: Customers — Create
+  source_operation: openapi/deliverart-openapi.yml#customersCreate
+- name: customersUpdate
+  description: Customers — Update
+  source_operation: openapi/deliverart-openapi.yml#customersUpdate
+- name: customersDelete
+  description: Customers — Delete
+  source_operation: openapi/deliverart-openapi.yml#customersDelete
+- name: customersOrderList
+  description: Customers — Order / List
+  source_operation: openapi/deliverart-openapi.yml#customersOrderList
+- name: customerAddressesDetail
+  description: Customer addresses — Detail
+  source_operation: openapi/deliverart-openapi.yml#customerAddressesDetail
+- name: customerAddressesCreate
+  description: Customer addresses — Create
+  source_operation: openapi/deliverart-openapi.yml#customerAddressesCreate
+- name: customerAddressesUpdate
+  description: Customer addresses — Update
+  source_operation: openapi/deliverart-openapi.yml#customerAddressesUpdate
+- name: customerAddressesSetAsDefault
+  description: Customer addresses — Set as default
+  source_operation: openapi/deliverart-openapi.yml#customerAddressesSetAsDefault
+- name: customerAddressesDelete
+  description: Customer addresses — Delete
+  source_operation: openapi/deliverart-openapi.yml#customerAddressesDelete
+- name: customerBusinessProfilesDetail
+  description: Customer business profiles — Detail
+  source_operation: openapi/deliverart-openapi.yml#customerBusinessProfilesDetail
+- name: customerBusinessProfilesCreate
+  description: Customer business profiles — Create
+  source_operation: openapi/deliverart-openapi.yml#customerBusinessProfilesCreate
+- name: customerBusinessProfilesUpdate
+  description: Customer business profiles — Update
+  source_operation: openapi/deliverart-openapi.yml#customerBusinessProfilesUpdate
+- name: customerBusinessProfilesSetAsDefault
+  description: Customer business profiles — Set as default
+  source_operation: openapi/deliverart-openapi.yml#customerBusinessProfilesSetAsDefault
+- name: customerBusinessProfilesDelete
+  description: Customer business profiles — Delete
+  source_operation: openapi/deliverart-openapi.yml#customerBusinessProfilesDelete
+- name: menuDetail
+  description: Menu — Detail
+  source_operation: openapi/deliverart-openapi.yml#menuDetail
+- name: menuCreate
+  description: Menu — Create
+  source_operation: openapi/deliverart-openapi.yml#menuCreate
+- name: menuUpdate
+  description: Menu — Update
+  source_operation: openapi/deliverart-openapi.yml#menuUpdate
+- name: menuCategories
+  description: Menu — Categories
+  source_operation: openapi/deliverart-openapi.yml#menuCategories
+- name: menuCategoriesDetail
+  description: Menu — Categories / Detail
+  source_operation: openapi/deliverart-openapi.yml#menuCategoriesDetail
+- name: menuCategoriesCreate
+  description: Menu — Categories / Create
+  source_operation: openapi/deliverart-openapi.yml#menuCategoriesCreate
+- name: menuCategoriesUpdate
+  description: Menu — Categories / Update
+  source_operation: openapi/deliverart-openapi.yml#menuCategoriesUpdate
+- name: menuCategoriesUpdateMetadata
+  description: Menu — Categories / Update metadata
+  source_operation: openapi/deliverart-openapi.yml#menuCategoriesUpdateMetadata
+- name: menuCategoriesDelete
+  description: Menu — Categories / Delete
+  source_operation: openapi/deliverart-openapi.yml#menuCategoriesDelete
+- name: menuCategoriesTranslate
+  description: Menu — Categories / Translate
+  source_operation: openapi/deliverart-openapi.yml#menuCategoriesTranslate
+- name: menuCategoriesSort
+  description: Menu — Categories / Sort
+  source_operation: openapi/deliverart-openapi.yml#menuCategoriesSort
+- name: menuCategoriesMediaUpload
+  description: Menu — Categories / Media / Upload
+  source_operation: openapi/deliverart-openapi.yml#menuCategoriesMediaUpload
+- name: menuCategoriesMediaRemove
+  description: Menu — Categories / Media / Remove
+  source_operation: openapi/deliverart-openapi.yml#menuCategoriesMediaRemove
+- name: menuAllergens
+  description: Menu — Allergens
+  source_operation: openapi/deliverart-openapi.yml#menuAllergens
+- name: menuAllergensDetail
+  description: Menu — Allergens / Detail
+  source_operation: openapi/deliverart-openapi.yml#menuAllergensDetail
+- name: menuAllergensCreate
+  description: Menu — Allergens / Create
+  source_operation: openapi/deliverart-openapi.yml#menuAllergensCreate
+- name: menuAllergensUpdate
+  description: Menu — Allergens / Update
+  source_operation: openapi/deliverart-openapi.yml#menuAllergensUpdate
+- name: menuAllergensUpdateMetadata
+  description: Menu — Allergens / Update metadata
+  source_operation: openapi/deliverart-openapi.yml#menuAllergensUpdateMetadata
+- name: menuAllergensDelete
+  description: Menu — Allergens / Delete
+  source_operation: openapi/deliverart-openapi.yml#menuAllergensDelete
+- name: menuAllergensTranslate
+  description: Menu — Allergens / Translate
+  source_operation: openapi/deliverart-openapi.yml#menuAllergensTranslate
+- name: menuIngredients
+  description: Menu — Ingredients
+  source_operation: openapi/deliverart-openapi.yml#menuIngredients
+- name: menuIngredientsDetail
+  description: Menu — Ingredients / Detail
+  source_operation: openapi/deliverart-openapi.yml#menuIngredientsDetail
+- name: menuIngredientsCreate
+  description: Menu — Ingredients / Create
+  source_operation: openapi/deliverart-openapi.yml#menuIngredientsCreate
+- name: menuIngredientsUpdate
+  description: Menu — Ingredients / Update
+  source_operation: openapi/deliverart-openapi.yml#menuIngredientsUpdate
+- name: menuIngredientsUpdateMetadata
+  description: Menu — Ingredients / Update metadata
+  source_operation: openapi/deliverart-openapi.yml#menuIngredientsUpdateMetadata
+- name: menuIngredientsDelete
+  description: Menu — Ingredients / Delete
+  source_operation: openapi/deliverart-openapi.yml#menuIngredientsDelete
+- name: menuIngredientsTranslate
+  description: Menu — Ingredients / Translate
+  source_operation: openapi/deliverart-openapi.yml#menuIngredientsTranslate
+- name: menuItemsDetail
+  description: Menu — Items / Detail
+  source_operation: openapi/deliverart-openapi.yml#menuItemsDetail
+- name: menuItemsCreate
+  description: Menu — Items / Create
+  source_operation: openapi/deliverart-openapi.yml#menuItemsCreate
+- name: menuItemsUpdate
+  description: Menu — Items / Update
+  source_operation: openapi/deliverart-openapi.yml#menuItemsUpdate
+- name: menuItemsUpdateMetadata
+  description: Menu — Items / Update metadata
+  source_operation: openapi/deliverart-openapi.yml#menuItemsUpdateMetadata
+- name: menuItemsDelete
+  description: Menu — Items / Delete
+  source_operation: openapi/deliverart-openapi.yml#menuItemsDelete
+- name: menuItemsSuspend
+  description: Menu — Items / Suspend
+  source_operation: openapi/deliverart-openapi.yml#menuItemsSuspend
+- name: menuItemsResume
+  description: Menu — Items / Resume
+  source_operation: openapi/deliverart-openapi.yml#menuItemsResume
+- name: menuItemsTranslate
+  description: Menu — Items / Translate
+  source_operation: openapi/deliverart-openapi.yml#menuItemsTranslate
+- name: workshiftsDetail
+  description: Workshifts — Detail
+  source_operation: openapi/deliverart-openapi.yml#workshiftsDetail
+- name: workshiftsDeliveryTimes
+  description: Workshifts — Delivery times
+  source_operation: openapi/deliverart-openapi.yml#workshiftsDeliveryTimes
+- name: workshiftsTakeAwayTimes
+  description: Workshifts — Take away times
+  source_operation: openapi/deliverart-openapi.yml#workshiftsTakeAwayTimes
+- name: workshiftsInvitationAccept
+  description: Workshifts — Invitation / Accept
+  source_operation: openapi/deliverart-openapi.yml#workshiftsInvitationAccept
+- name: workshiftsInvitationReject
+  description: Workshifts — Invitation / Reject
+  source_operation: openapi/deliverart-openapi.yml#workshiftsInvitationReject
+- name: deliveryFeeDetail
+  description: Delivery fee — Detail
+  source_operation: openapi/deliverart-openapi.yml#deliveryFeeDetail
+- name: deliveryFeeCreate
+  description: Delivery fee — Create
+  source_operation: openapi/deliverart-openapi.yml#deliveryFeeCreate
+- name: deliveryFeeDelete
+  description: Delivery fee — Delete
+  source_operation: openapi/deliverart-openapi.yml#deliveryFeeDelete
+- name: ordersDetail
+  description: Orders — Detail
+  source_operation: openapi/deliverart-openapi.yml#ordersDetail
+- name: ordersDetailDelivery
+  description: Orders — Detail / Delivery
+  source_operation: openapi/deliverart-openapi.yml#ordersDetailDelivery
+- name: ordersDetailTakeAway
+  description: Orders — Detail / Take away
+  source_operation: openapi/deliverart-openapi.yml#ordersDetailTakeAway
+- name: ordersInit
+  description: Orders — Init
+  source_operation: openapi/deliverart-openapi.yml#ordersInit
+- name: ordersAbort
+  description: Orders — Abort
+  source_operation: openapi/deliverart-openapi.yml#ordersAbort
+- name: ordersUpdateNote
+  description: Orders — Update / Note
+  source_operation: openapi/deliverart-openapi.yml#ordersUpdateNote
+- name: ordersUpdatePayment
+  description: Orders — Update / Payment
+  source_operation: openapi/deliverart-openapi.yml#ordersUpdatePayment
+- name: ordersUpdateCustomer
+  description: Orders — Update / Customer
+  source_operation: openapi/deliverart-openapi.yml#ordersUpdateCustomer
+- name: ordersUpdateCustomerAddress
+  description: Orders — Update / Customer address
+  source_operation: openapi/deliverart-openapi.yml#ordersUpdateCustomerAddress
+- name: ordersUpdateCustomerBusinessProfile
+  description: Orders — Update / Customer business profile
+  source_operation: openapi/deliverart-openapi.yml#ordersUpdateCustomerBusinessProfile
+- name: ordersUpdateItems
+  description: Orders — Update / Items
+  source_operation: openapi/deliverart-openapi.yml#ordersUpdateItems
+- name: ordersCostCreate
+  description: Orders — Cost / Create
+  source_operation: openapi/deliverart-openapi.yml#ordersCostCreate
+- name: ordersCostDelete
+  description: Orders — Cost / Delete
+  source_operation: openapi/deliverart-openapi.yml#ordersCostDelete
+- name: ordersUnsetCustomer
+  description: Orders — Unset / Customer
+  source_operation: openapi/deliverart-openapi.yml#ordersUnsetCustomer
+- name: ordersUnsetCustomerAddress
+  description: Orders — Unset / Customer address
+  source_operation: openapi/deliverart-openapi.yml#ordersUnsetCustomerAddress
+- name: ordersUnsetCustomerBusinessProfile
+  description: Orders — Unset / Customer business profile
+  source_operation: openapi/deliverart-openapi.yml#ordersUnsetCustomerBusinessProfile
+- name: ordersDelete
+  description: Orders — Delete
+  source_operation: openapi/deliverart-openapi.yml#ordersDelete
+- name: reservationReserveDeliveryTime
+  description: Reservation — Reserve delivery time
+  source_operation: openapi/deliverart-openapi.yml#reservationReserveDeliveryTime
+- name: reservationReserveTakeAwayTime
+  description: Reservation — Reserve take-away time
+  source_operation: openapi/deliverart-openapi.yml#reservationReserveTakeAwayTime
+- name: reservationDeliveryTimeDetailByOrder
+  description: Reservation — Delivery time / Detail / By order
+  source_operation: openapi/deliverart-openapi.yml#reservationDeliveryTimeDetailByOrder
+- name: reservationDeliveryTimeDetailByIdentifier
+  description: Reservation — Delivery time / Detail / By identifier
+  source_operation: openapi/deliverart-openapi.yml#reservationDeliveryTimeDetailByIdentifier
+- name: reservationDeliveryTimeDeleteByOrder
+  description: Reservation — Delivery time / Delete / By order
+  source_operation: openapi/deliverart-openapi.yml#reservationDeliveryTimeDeleteByOrder
+- name: reservationDeliveryTimeDeleteByIdentifier
+  description: Reservation — Delivery time / Delete / By identifier
+  source_operation: openapi/deliverart-openapi.yml#reservationDeliveryTimeDeleteByIdentifier
+- name: reservationTakeAwayTimeDetailByOrder
+  description: Reservation — Take-away time / Detail / By order
+  source_operation: openapi/deliverart-openapi.yml#reservationTakeAwayTimeDetailByOrder
+- name: reservationTakeAwayTimeDetailByIdentifier
+  description: Reservation — Take-away time / Detail / By identifier
+  source_operation: openapi/deliverart-openapi.yml#reservationTakeAwayTimeDetailByIdentifier
+- name: reservationTakeAwayTimeDeleteByOrder
+  description: Reservation — Take-away time / Delete / By order
+  source_operation: openapi/deliverart-openapi.yml#reservationTakeAwayTimeDeleteByOrder
+- name: reservationTakeAwayTimeDeleteByIdentifier
+  description: Reservation — Take-away time / Delete / By identifier
+  source_operation: openapi/deliverart-openapi.yml#reservationTakeAwayTimeDeleteByIdentifier
+- name: deliveriesCreate
+  description: Deliveries — Create
+  source_operation: openapi/deliverart-openapi.yml#deliveriesCreate
+- name: deliveriesDetail
+  description: Deliveries — Detail
+  source_operation: openapi/deliverart-openapi.yml#deliveriesDetail
+- name: deliveriesTakeCharge
+  description: Deliveries — Take charge
+  source_operation: openapi/deliverart-openapi.yml#deliveriesTakeCharge
+- name: deliveriesStart
+  description: Deliveries — Start
+  source_operation: openapi/deliverart-openapi.yml#deliveriesStart
+- name: deliveriesOrderDelivered
+  description: Deliveries — Order delivered
+  source_operation: openapi/deliverart-openapi.yml#deliveriesOrderDelivered
+- name: deliveriesEnd
+  description: Deliveries — End
+  source_operation: openapi/deliverart-openapi.yml#deliveriesEnd
+- name: takeAwayCreate
+  description: Take away — Create
+  source_operation: openapi/deliverart-openapi.yml#takeAwayCreate
+- name: takeAwayDetail
+  description: Take away — Detail
+  source_operation: openapi/deliverart-openapi.yml#takeAwayDetail

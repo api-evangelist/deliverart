@@ -1,0 +1,38 @@
+# Deliverart
+
+> Deliverart is food-delivery management software for restaurants and delivery businesses. It centralizes orders from Just Eat, Glovo, Deliveroo, a restaurant's own website and phone; synchronizes menus across channels; and manages riders, deliveries, take-away and live tracking. The public Deliverart API is an RPC-style HTTPS API (GET reads, POST writes) covering orders, menu, customers, points of sale, workshifts, deliveries and reservations.
+
+## APIs
+
+- [Deliverart API reference](https://apidoc.deliverart.it/): 130 operations across Orders, Menu, Deliveries, Customers, Points of sale, Workshifts and Reservations.
+- Base URL: https://pubapi.deliverart.it
+- Auth: OAuth2 (password grant, token URL https://auth.deliverart.it/oauth) and API key header X-Deliverart-ApiKey.
+
+## Specs
+
+- [OpenAPI (generated from docs)](openapi/deliverart-openapi.yml)
+- [Authentication profile](authentication/deliverart-authentication.yml)
+- [OAuth scopes (44)](scopes/deliverart-scopes.yml)
+- [API conventions](conventions/deliverart-conventions.yml)
+- [Error catalog](errors/deliverart-problem-types.yml)
+- [Data model](data-model/deliverart-data-model.yml)
+- [Lifecycle & changelog](changelog/deliverart-changelog.yml)
+- [Agentic access profile](agentic-access/deliverart-agentic-access.yml)
+- [MCP candidate tool list](mcp/deliverart-mcp.yml)
+
+## SDKs
+
+- [@deliverart JavaScript SDK suite (33 npm packages)](https://www.npmjs.com/org/deliverart): modular first-party SDK — order, menu, delivery, customer, payment, webhook, point-of-sale and more.
+
+## Agent skills
+
+- [Create and fulfil a delivery order](skills/deliverart-create-and-fulfil-order.md)
+- [Build and maintain a menu](skills/deliverart-manage-menu.md)
+
+## Docs
+
+- [Website](https://www.deliverart.it/)
+- [Pricing](https://www.deliverart.it/prezzi/)
+- [Blog](https://www.deliverart.it/risorse/blog/)
+- [Request a demo](https://www.deliverart.it/richiedi-la-demo/)
+- [Contact / support](https://www.deliverart.it/chi-siamo/contatti/)

@@ -1,0 +1,47 @@
+generated: '2026-07-18'
+method: searched
+source: https://apidoc.deliverart.it/
+
+auth:
+  styles:
+  - API Key (X-Deliverart-ApiKey header)
+  - 'OAuth2 password grant (Authorization: Bearer)'
+  token_url: https://auth.deliverart.it/oauth
+  token_ttl_seconds: 3600
+  refresh_token_days: 14
+  ref: authentication/deliverart-authentication.yml
+protocol:
+  style: RPC over HTTPS
+  methods:
+  - GET (reads)
+  - POST (writes/mutations)
+  content_type: application/json
+pagination:
+  style: page-number
+  response_fields:
+  - page
+  - totalItems
+  - pageSize
+  note: List endpoints return paginated results.
+localization:
+  header: X-I18n-Locale
+  values:
+  - it_IT
+  - en_GB
+  - ar_AE
+  default: it_IT
+timezone:
+  header: X-Date-TimeZone
+  note: All dates stored in UTC; responses rendered in the requesting user timezone, overridable per request.
+idempotency:
+  supported: false
+  note: No idempotency-key mechanism documented in the public API reference.
+error_envelope:
+  shape: JSON object with message/code
+  ref: errors/deliverart-problem-types.yml
+  rfc9457: false
+versioning:
+  scheme: unversioned host (pubapi.deliverart.it)
+  changelog: changelog/deliverart-changelog.yml
+two_factor:
+  note: Email and mobile-phone verification via 2FA request/validate endpoints.

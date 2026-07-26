@@ -1,7 +1,26 @@
 aid: deliverart
 name: Deliverart
-description: Deliverart is a company surfaced as a portfolio company of techstars and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Deliverart is food-delivery management software for restaurants and delivery businesses, founded in
+  Italy and backed by Techstars. It centralizes orders from Just Eat, Glovo, Deliveroo, a restaurant's
+  own website and phone into a single interface; synchronizes menus across sales channels; and manages
+  riders, delivery routing, take-away, the Delivery Order Display System (DODS) and live tracking. The
+  public Deliverart API is an RPC-style HTTPS API (GET for reads, POST for writes) covering orders,
+  menu, customers, points of sale, workshifts, deliveries and reservations, with API key and OAuth2
+  authentication. Deliverart also ships a modular first-party JavaScript SDK suite on npm.
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://www.deliverart.it/wp-content/uploads/2023/02/LinkedIn-Cover.jpg
 url: https://raw.githubusercontent.com/api-evangelist/deliverart/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,15 +30,334 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
-apis: []
+- Food Delivery
+- Restaurants
+- Order Management
+- Logistics
+- Delivery
+- Menu Management
+- Point of Sale
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+apis:
+- aid: deliverart:deliverart-addresses-api
+  name: Deliverart Addresses API
+  description: The Addresses API from Deliverart — 3 operation(s) for addresses.
+  humanURL: https://apidoc.deliverart.it/
+  baseURL: https://pubapi.deliverart.it
+  tags:
+  - Addresses
+  properties:
+  - type: OpenAPI
+    url: openapi/deliverart-addresses-api-openapi.yml
+  - type: Documentation
+    url: https://apidoc.deliverart.it/
+  - type: APIReference
+    url: https://apidoc.deliverart.it/
+  - type: GettingStarted
+    url: https://apidoc.deliverart.it/
+- aid: deliverart:deliverart-companies-api
+  name: Deliverart Companies API
+  description: The Companies API from Deliverart — 2 operation(s) for companies.
+  humanURL: https://apidoc.deliverart.it/
+  baseURL: https://pubapi.deliverart.it
+  tags:
+  - Companies
+  properties:
+  - type: OpenAPI
+    url: openapi/deliverart-companies-api-openapi.yml
+  - type: Documentation
+    url: https://apidoc.deliverart.it/
+  - type: APIReference
+    url: https://apidoc.deliverart.it/
+  - type: GettingStarted
+    url: https://apidoc.deliverart.it/
+- aid: deliverart:deliverart-customer-addresses-api
+  name: Deliverart Customer addresses API
+  description: The Customer addresses API from Deliverart — 5 operation(s) for customer addresses.
+  humanURL: https://apidoc.deliverart.it/
+  baseURL: https://pubapi.deliverart.it
+  tags:
+  - Customer addresses
+  properties:
+  - type: OpenAPI
+    url: openapi/deliverart-customer-addresses-api-openapi.yml
+  - type: Documentation
+    url: https://apidoc.deliverart.it/
+  - type: APIReference
+    url: https://apidoc.deliverart.it/
+  - type: GettingStarted
+    url: https://apidoc.deliverart.it/
+- aid: deliverart:deliverart-customer-business-profiles-api
+  name: Deliverart Customer business profiles API
+  description: >-
+    The Customer business profiles API from Deliverart — 5 operation(s) for customer business profiles.
+  humanURL: https://apidoc.deliverart.it/
+  baseURL: https://pubapi.deliverart.it
+  tags:
+  - Customer business profiles
+  properties:
+  - type: OpenAPI
+    url: openapi/deliverart-customer-business-profiles-api-openapi.yml
+  - type: Documentation
+    url: https://apidoc.deliverart.it/
+  - type: APIReference
+    url: https://apidoc.deliverart.it/
+  - type: GettingStarted
+    url: https://apidoc.deliverart.it/
+- aid: deliverart:deliverart-customers-api
+  name: Deliverart Customers API
+  description: The Customers API from Deliverart — 5 operation(s) for customers.
+  humanURL: https://apidoc.deliverart.it/
+  baseURL: https://pubapi.deliverart.it
+  tags:
+  - Customers
+  properties:
+  - type: OpenAPI
+    url: openapi/deliverart-customers-api-openapi.yml
+  - type: Documentation
+    url: https://apidoc.deliverart.it/
+  - type: APIReference
+    url: https://apidoc.deliverart.it/
+  - type: GettingStarted
+    url: https://apidoc.deliverart.it/
+- aid: deliverart:deliverart-deliveries-api
+  name: Deliverart Deliveries API
+  description: The Deliveries API from Deliverart — 6 operation(s) for deliveries.
+  humanURL: https://apidoc.deliverart.it/
+  baseURL: https://pubapi.deliverart.it
+  tags:
+  - Deliveries
+  properties:
+  - type: OpenAPI
+    url: openapi/deliverart-deliveries-api-openapi.yml
+  - type: Documentation
+    url: https://apidoc.deliverart.it/
+  - type: APIReference
+    url: https://apidoc.deliverart.it/
+  - type: GettingStarted
+    url: https://apidoc.deliverart.it/
+- aid: deliverart:deliverart-delivery-fee-api
+  name: Deliverart Delivery fee API
+  description: The Delivery fee API from Deliverart — 3 operation(s) for delivery fee.
+  humanURL: https://apidoc.deliverart.it/
+  baseURL: https://pubapi.deliverart.it
+  tags:
+  - Delivery fee
+  properties:
+  - type: OpenAPI
+    url: openapi/deliverart-delivery-fee-api-openapi.yml
+  - type: Documentation
+    url: https://apidoc.deliverart.it/
+  - type: APIReference
+    url: https://apidoc.deliverart.it/
+  - type: GettingStarted
+    url: https://apidoc.deliverart.it/
+- aid: deliverart:deliverart-me-api
+  name: Deliverart Me API
+  description: The Me API from Deliverart — 16 operation(s) for me.
+  humanURL: https://apidoc.deliverart.it/
+  baseURL: https://pubapi.deliverart.it
+  tags:
+  - Me
+  properties:
+  - type: OpenAPI
+    url: openapi/deliverart-me-api-openapi.yml
+  - type: Documentation
+    url: https://apidoc.deliverart.it/
+  - type: APIReference
+    url: https://apidoc.deliverart.it/
+  - type: GettingStarted
+    url: https://apidoc.deliverart.it/
+- aid: deliverart:deliverart-menu-api
+  name: Deliverart Menu API
+  description: The Menu API from Deliverart — 35 operation(s) for menu.
+  humanURL: https://apidoc.deliverart.it/
+  baseURL: https://pubapi.deliverart.it
+  tags:
+  - Menu
+  properties:
+  - type: OpenAPI
+    url: openapi/deliverart-menu-api-openapi.yml
+  - type: Documentation
+    url: https://apidoc.deliverart.it/
+  - type: APIReference
+    url: https://apidoc.deliverart.it/
+  - type: GettingStarted
+    url: https://apidoc.deliverart.it/
+- aid: deliverart:deliverart-orders-api
+  name: Deliverart Orders API
+  description: The Orders API from Deliverart — 17 operation(s) for orders.
+  humanURL: https://apidoc.deliverart.it/
+  baseURL: https://pubapi.deliverart.it
+  tags:
+  - Orders
+  properties:
+  - type: OpenAPI
+    url: openapi/deliverart-orders-api-openapi.yml
+  - type: Documentation
+    url: https://apidoc.deliverart.it/
+  - type: APIReference
+    url: https://apidoc.deliverart.it/
+  - type: GettingStarted
+    url: https://apidoc.deliverart.it/
+- aid: deliverart:deliverart-password-reset-api
+  name: Deliverart Password reset API
+  description: The Password reset API from Deliverart — 3 operation(s) for password reset.
+  humanURL: https://apidoc.deliverart.it/
+  baseURL: https://pubapi.deliverart.it
+  tags:
+  - Password reset
+  properties:
+  - type: OpenAPI
+    url: openapi/deliverart-password-reset-api-openapi.yml
+  - type: Documentation
+    url: https://apidoc.deliverart.it/
+  - type: APIReference
+    url: https://apidoc.deliverart.it/
+  - type: GettingStarted
+    url: https://apidoc.deliverart.it/
+- aid: deliverart:deliverart-points-of-sale-api
+  name: Deliverart Points of sale API
+  description: The Points of sale API from Deliverart — 10 operation(s) for points of sale.
+  humanURL: https://apidoc.deliverart.it/
+  baseURL: https://pubapi.deliverart.it
+  tags:
+  - Points of sale
+  properties:
+  - type: OpenAPI
+    url: openapi/deliverart-points-of-sale-api-openapi.yml
+  - type: Documentation
+    url: https://apidoc.deliverart.it/
+  - type: APIReference
+    url: https://apidoc.deliverart.it/
+  - type: GettingStarted
+    url: https://apidoc.deliverart.it/
+- aid: deliverart:deliverart-registration-api
+  name: Deliverart Registration API
+  description: The Registration API from Deliverart — 3 operation(s) for registration.
+  humanURL: https://apidoc.deliverart.it/
+  baseURL: https://pubapi.deliverart.it
+  tags:
+  - Registration
+  properties:
+  - type: OpenAPI
+    url: openapi/deliverart-registration-api-openapi.yml
+  - type: Documentation
+    url: https://apidoc.deliverart.it/
+  - type: APIReference
+    url: https://apidoc.deliverart.it/
+  - type: GettingStarted
+    url: https://apidoc.deliverart.it/
+- aid: deliverart:deliverart-reservation-api
+  name: Deliverart Reservation API
+  description: The Reservation API from Deliverart — 10 operation(s) for reservation.
+  humanURL: https://apidoc.deliverart.it/
+  baseURL: https://pubapi.deliverart.it
+  tags:
+  - Reservation
+  properties:
+  - type: OpenAPI
+    url: openapi/deliverart-reservation-api-openapi.yml
+  - type: Documentation
+    url: https://apidoc.deliverart.it/
+  - type: APIReference
+    url: https://apidoc.deliverart.it/
+  - type: GettingStarted
+    url: https://apidoc.deliverart.it/
+- aid: deliverart:deliverart-take-away-api
+  name: Deliverart Take away API
+  description: The Take away API from Deliverart — 2 operation(s) for take away.
+  humanURL: https://apidoc.deliverart.it/
+  baseURL: https://pubapi.deliverart.it
+  tags:
+  - Take away
+  properties:
+  - type: OpenAPI
+    url: openapi/deliverart-take-away-api-openapi.yml
+  - type: Documentation
+    url: https://apidoc.deliverart.it/
+  - type: APIReference
+    url: https://apidoc.deliverart.it/
+  - type: GettingStarted
+    url: https://apidoc.deliverart.it/
+- aid: deliverart:deliverart-workshifts-api
+  name: Deliverart Workshifts API
+  description: The Workshifts API from Deliverart — 5 operation(s) for workshifts.
+  humanURL: https://apidoc.deliverart.it/
+  baseURL: https://pubapi.deliverart.it
+  tags:
+  - Workshifts
+  properties:
+  - type: OpenAPI
+    url: openapi/deliverart-workshifts-api-openapi.yml
+  - type: Documentation
+    url: https://apidoc.deliverart.it/
+  - type: APIReference
+    url: https://apidoc.deliverart.it/
+  - type: GettingStarted
+    url: https://apidoc.deliverart.it/
 common:
+- type: MCPServer
+  url: mcp/deliverart-mcp.yml
+- type: Authentication
+  url: authentication/deliverart-authentication.yml
+- type: OAuthScopes
+  url: scopes/deliverart-scopes.yml
+- type: Conventions
+  url: conventions/deliverart-conventions.yml
+- type: ErrorCatalog
+  url: errors/deliverart-problem-types.yml
+- type: Lifecycle
+  url: lifecycle/deliverart-lifecycle.yml
+- type: ChangeLog
+  url: changelog/deliverart-changelog.yml
+- type: DataModel
+  url: data-model/deliverart-data-model.yml
+- type: Conformance
+  url: conformance/deliverart-conformance.yml
+- type: AgenticAccess
+  url: agentic-access/deliverart-agentic-access.yml
+- type: Overlay
+  url: overlays/deliverart-openapi-overlay.yaml
+- type: LLMsTxt
+  url: llms/deliverart-llms.txt
+- type: Packages
+  url: packages/deliverart-packages.yml
+- type: SDKs
+  url: packages/deliverart-packages.yml
+- type: AgentSkill
+  url: skills/_index.yml
+- type: DomainSecurity
+  url: security/deliverart-domain-security.yml
+- type: DeveloperPortal
+  url: https://apidoc.deliverart.it/
+- type: Documentation
+  url: https://apidoc.deliverart.it/
+- type: APIReference
+  url: https://apidoc.deliverart.it/
+- type: GettingStarted
+  url: https://apidoc.deliverart.it/
+- type: Pricing
+  url: https://www.deliverart.it/prezzi/
+- type: SignUp
+  url: https://www.deliverart.it/richiedi-la-demo/
+- type: Support
+  url: https://www.deliverart.it/chi-siamo/contatti/
+- type: Blog
+  url: https://www.deliverart.it/risorse/blog/
+- type: PrivacyPolicy
+  url: https://www.iubenda.com/privacy-policy/8283529
 - type: Website
-  url: https://deliverart.it/
+  url: https://www.deliverart.it/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

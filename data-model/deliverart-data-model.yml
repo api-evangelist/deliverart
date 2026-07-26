@@ -1,0 +1,91 @@
+generated: '2026-07-18'
+method: derived
+source: openapi/deliverart-openapi.yml
+
+entities:
+- Company
+- PointOfSale
+- Customer
+- CustomerAddress
+- CustomerBusinessProfile
+- Address
+- Menu
+- Category
+- Item
+- Allergen
+- Ingredient
+- Order
+- Delivery
+- TakeAway
+- Workshift
+- DeliveryFee
+- Reservation
+relationships:
+- from: Company
+  type: has_many
+  to: PointOfSale
+  via: company/{id}/pos
+- from: PointOfSale
+  type: has_many
+  to: Customer
+  via: pos/{id}/customers
+- from: PointOfSale
+  type: has_many
+  to: Workshift
+  via: pos/{id}/workshifts
+- from: PointOfSale
+  type: has_many
+  to: DeliveryFee
+  via: pos/{id}/delivery/fees
+- from: PointOfSale
+  type: has_many
+  to: Delivery
+  via: pos/{id}/deliveries
+- from: Customer
+  type: has_many
+  to: CustomerAddress
+  via: customer/{id}/address
+- from: Customer
+  type: has_many
+  to: CustomerBusinessProfile
+  via: customer/{id}/business-profile
+- from: Customer
+  type: has_many
+  to: Order
+  via: customer/{id}/order/list
+- from: Menu
+  type: has_many
+  to: Category
+  via: menu/category
+- from: Menu
+  type: has_many
+  to: Item
+  via: menu/item
+- from: Item
+  type: has_many
+  to: Ingredient
+  via: menu/ingredient
+- from: Item
+  type: has_many
+  to: Allergen
+  via: menu/allergen
+- from: Order
+  type: has_one
+  to: Delivery
+  via: order/{id}/delivery/detail
+- from: Order
+  type: has_one
+  to: TakeAway
+  via: order/{id}/take-away/detail
+- from: Order
+  type: belongs_to
+  to: Customer
+  via: order/{id}/update/customer
+- from: Workshift
+  type: has_many
+  to: Reservation
+  via: workshift/{id}/delivery/time/reserve
+- from: Delivery
+  type: belongs_to
+  to: Order
+  via: delivery/order/{id}/delivered

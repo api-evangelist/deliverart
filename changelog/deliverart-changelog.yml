@@ -1,0 +1,49 @@
+generated: '2026-07-18'
+method: searched
+source: https://apidoc.deliverart.it/
+
+scheme: dated-updates
+source_section: Updates
+note: Recent window captured from the API reference changelog (earliest entries Oct 2021).
+entries:
+- date: '2022-10-03'
+  type: addition
+  highlights:
+  - Added Customers / Delete API
+  - Added Point of sale / Customers / List API
+- date: '2022-08-12'
+  type: addition
+  highlights:
+  - Added delivery-fee flag during delivery creation
+  - Added delivery-fee management (create/retrieve/delete)
+  - Added API key authentication
+- date: '2022-08-11'
+  type: addition
+  highlights:
+  - More options for delivery/take-away time reservation (reserve without initializing an order)
+  - Detail + delete flows for delivery and take-away time objects
+- date: '2022-04-01'
+  type: addition
+  highlights:
+  - Added "rules" logic for menu item composition
+- date: '2022-03-24'
+  type: addition
+  highlights:
+  - Fields exposed for menu-item detail
+  - Allergens field for ingredient creation
+  - 3 menu-management APIs
+- date: '2022-01-02'
+  type: addition
+  highlights:
+  - Menu-item suspension option
+- date: '2021-12-07'
+  type: addition
+  highlights:
+  - Point of sale / Settings APIs
+  - Orders / Delete API
+- date: '2021-11-22'
+  type: addition
+  highlights:
+  - Create address from coordinates
+  - Timezone field on user profile
+  - exit.accurate field on delivery

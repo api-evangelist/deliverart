@@ -1,0 +1,17 @@
+generated: '2026-07-18'
+method: searched
+source: https://apidoc.deliverart.it/
+
+versioning:
+  scheme: unversioned-host
+  current: v1
+  docs: https://apidoc.deliverart.it/
+changelog: https://apidoc.deliverart.it/
+deprecation:
+  policy_url: null
+  sunset_header: false
+  note: No deprecation policy or Sunset header support documented.
+status_page: null
+sla:
+  url: null
+deprecated_operations: []
