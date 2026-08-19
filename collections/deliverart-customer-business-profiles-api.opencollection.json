@@ -1,0 +1,180 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Deliverart Addresses Customer business profiles API",
+    "version": "1.0"
+  },
+  "request": {
+    "auth": {
+      "type": "oauth2",
+      "flow": "resource_owner_password_credentials",
+      "accessTokenUrl": "https://auth.deliverart.it/oauth",
+      "credentials": {
+        "clientId": "{{clientId}}",
+        "clientSecret": "{{clientSecret}}"
+      }
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Customer business profiles",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Customer business profiles — Detail",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://pubapi.deliverart.it/customer/business-profile/:id/detail",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ],
+            "auth": {
+              "type": "oauth2",
+              "flow": "resource_owner_password_credentials",
+              "accessTokenUrl": "https://auth.deliverart.it/oauth",
+              "credentials": {
+                "clientId": "{{clientId}}",
+                "clientSecret": "{{clientSecret}}"
+              }
+            }
+          },
+          "docs": "Customer business profiles — Detail. Deliverart RPC-style endpoint (GET only)."
+        },
+        {
+          "info": {
+            "name": "Customer business profiles — Create",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://pubapi.deliverart.it/customer/:id/business-profile/create",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            },
+            "auth": {
+              "type": "oauth2",
+              "flow": "resource_owner_password_credentials",
+              "accessTokenUrl": "https://auth.deliverart.it/oauth",
+              "credentials": {
+                "clientId": "{{clientId}}",
+                "clientSecret": "{{clientSecret}}"
+              }
+            }
+          },
+          "docs": "Customer business profiles — Create. Deliverart RPC-style endpoint (POST only)."
+        },
+        {
+          "info": {
+            "name": "Customer business profiles — Update",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://pubapi.deliverart.it/customer/business-profile/:id/update",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            },
+            "auth": {
+              "type": "oauth2",
+              "flow": "resource_owner_password_credentials",
+              "accessTokenUrl": "https://auth.deliverart.it/oauth",
+              "credentials": {
+                "clientId": "{{clientId}}",
+                "clientSecret": "{{clientSecret}}"
+              }
+            }
+          },
+          "docs": "Customer business profiles — Update. Deliverart RPC-style endpoint (POST only)."
+        },
+        {
+          "info": {
+            "name": "Customer business profiles — Set as default",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://pubapi.deliverart.it/customer/business-profile/:id/default",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            },
+            "auth": {
+              "type": "oauth2",
+              "flow": "resource_owner_password_credentials",
+              "accessTokenUrl": "https://auth.deliverart.it/oauth",
+              "credentials": {
+                "clientId": "{{clientId}}",
+                "clientSecret": "{{clientSecret}}"
+              }
+            }
+          },
+          "docs": "Customer business profiles — Set as default. Deliverart RPC-style endpoint (POST only)."
+        },
+        {
+          "info": {
+            "name": "Customer business profiles — Delete",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://pubapi.deliverart.it/customer/business-profile/:id/delete",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            },
+            "auth": {
+              "type": "oauth2",
+              "flow": "resource_owner_password_credentials",
+              "accessTokenUrl": "https://auth.deliverart.it/oauth",
+              "credentials": {
+                "clientId": "{{clientId}}",
+                "clientSecret": "{{clientSecret}}"
+              }
+            }
+          },
+          "docs": "Customer business profiles — Delete. Deliverart RPC-style endpoint (POST only)."
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

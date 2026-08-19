@@ -1,0 +1,83 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Deliverart Addresses Companies API",
+    "version": "1.0"
+  },
+  "request": {
+    "auth": {
+      "type": "oauth2",
+      "flow": "resource_owner_password_credentials",
+      "accessTokenUrl": "https://auth.deliverart.it/oauth",
+      "credentials": {
+        "clientId": "{{clientId}}",
+        "clientSecret": "{{clientSecret}}"
+      }
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Companies",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Companies — Detail",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://pubapi.deliverart.it/company/:id/detail",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ],
+            "auth": {
+              "type": "oauth2",
+              "flow": "resource_owner_password_credentials",
+              "accessTokenUrl": "https://auth.deliverart.it/oauth",
+              "credentials": {
+                "clientId": "{{clientId}}",
+                "clientSecret": "{{clientSecret}}"
+              }
+            }
+          },
+          "docs": "Companies — Detail. Deliverart RPC-style endpoint (GET only)."
+        },
+        {
+          "info": {
+            "name": "Companies — POS / List",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://pubapi.deliverart.it/company/:id/pos/list",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ],
+            "auth": {
+              "type": "oauth2",
+              "flow": "resource_owner_password_credentials",
+              "accessTokenUrl": "https://auth.deliverart.it/oauth",
+              "credentials": {
+                "clientId": "{{clientId}}",
+                "clientSecret": "{{clientSecret}}"
+              }
+            }
+          },
+          "docs": "Companies — POS / List. Deliverart RPC-style endpoint (GET only)."
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

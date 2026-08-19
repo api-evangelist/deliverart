@@ -1,0 +1,1026 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Deliverart Addresses Menu API",
+    "version": "1.0"
+  },
+  "request": {
+    "auth": {
+      "type": "oauth2",
+      "flow": "resource_owner_password_credentials",
+      "accessTokenUrl": "https://auth.deliverart.it/oauth",
+      "credentials": {
+        "clientId": "{{clientId}}",
+        "clientSecret": "{{clientSecret}}"
+      }
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Menu",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Menu — Detail",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://pubapi.deliverart.it/menu/:id/detail",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ],
+            "auth": {
+              "type": "oauth2",
+              "flow": "resource_owner_password_credentials",
+              "accessTokenUrl": "https://auth.deliverart.it/oauth",
+              "credentials": {
+                "clientId": "{{clientId}}",
+                "clientSecret": "{{clientSecret}}"
+              }
+            }
+          },
+          "docs": "Menu — Detail. Deliverart RPC-style endpoint (GET only)."
+        },
+        {
+          "info": {
+            "name": "Menu — Create",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://pubapi.deliverart.it/menu/create",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            },
+            "auth": {
+              "type": "oauth2",
+              "flow": "resource_owner_password_credentials",
+              "accessTokenUrl": "https://auth.deliverart.it/oauth",
+              "credentials": {
+                "clientId": "{{clientId}}",
+                "clientSecret": "{{clientSecret}}"
+              }
+            }
+          },
+          "docs": "Menu — Create. Deliverart RPC-style endpoint (POST only)."
+        },
+        {
+          "info": {
+            "name": "Menu — Update",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://pubapi.deliverart.it/menu/:id/update",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            },
+            "auth": {
+              "type": "oauth2",
+              "flow": "resource_owner_password_credentials",
+              "accessTokenUrl": "https://auth.deliverart.it/oauth",
+              "credentials": {
+                "clientId": "{{clientId}}",
+                "clientSecret": "{{clientSecret}}"
+              }
+            }
+          },
+          "docs": "Menu — Update. Deliverart RPC-style endpoint (POST only)."
+        },
+        {
+          "info": {
+            "name": "Menu — Categories",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://pubapi.deliverart.it/menu/categories",
+            "auth": {
+              "type": "oauth2",
+              "flow": "resource_owner_password_credentials",
+              "accessTokenUrl": "https://auth.deliverart.it/oauth",
+              "credentials": {
+                "clientId": "{{clientId}}",
+                "clientSecret": "{{clientSecret}}"
+              }
+            }
+          },
+          "docs": "Menu — Categories. Deliverart RPC-style endpoint (GET only)."
+        },
+        {
+          "info": {
+            "name": "Menu — Categories / Detail",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://pubapi.deliverart.it/menu/category/:id/detail",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ],
+            "auth": {
+              "type": "oauth2",
+              "flow": "resource_owner_password_credentials",
+              "accessTokenUrl": "https://auth.deliverart.it/oauth",
+              "credentials": {
+                "clientId": "{{clientId}}",
+                "clientSecret": "{{clientSecret}}"
+              }
+            }
+          },
+          "docs": "Menu — Categories / Detail. Deliverart RPC-style endpoint (GET only)."
+        },
+        {
+          "info": {
+            "name": "Menu — Categories / Create",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://pubapi.deliverart.it/menu/category/create",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            },
+            "auth": {
+              "type": "oauth2",
+              "flow": "resource_owner_password_credentials",
+              "accessTokenUrl": "https://auth.deliverart.it/oauth",
+              "credentials": {
+                "clientId": "{{clientId}}",
+                "clientSecret": "{{clientSecret}}"
+              }
+            }
+          },
+          "docs": "Menu — Categories / Create. Deliverart RPC-style endpoint (POST only)."
+        },
+        {
+          "info": {
+            "name": "Menu — Categories / Update",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://pubapi.deliverart.it/menu/category/:id/update",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            },
+            "auth": {
+              "type": "oauth2",
+              "flow": "resource_owner_password_credentials",
+              "accessTokenUrl": "https://auth.deliverart.it/oauth",
+              "credentials": {
+                "clientId": "{{clientId}}",
+                "clientSecret": "{{clientSecret}}"
+              }
+            }
+          },
+          "docs": "Menu — Categories / Update. Deliverart RPC-style endpoint (POST only)."
+        },
+        {
+          "info": {
+            "name": "Menu — Categories / Update metadata",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://pubapi.deliverart.it/menu/allergen/:id/category/meta",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            },
+            "auth": {
+              "type": "oauth2",
+              "flow": "resource_owner_password_credentials",
+              "accessTokenUrl": "https://auth.deliverart.it/oauth",
+              "credentials": {
+                "clientId": "{{clientId}}",
+                "clientSecret": "{{clientSecret}}"
+              }
+            }
+          },
+          "docs": "Menu — Categories / Update metadata. Deliverart RPC-style endpoint (POST only)."
+        },
+        {
+          "info": {
+            "name": "Menu — Categories / Delete",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://pubapi.deliverart.it/menu/category/:id/delete",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            },
+            "auth": {
+              "type": "oauth2",
+              "flow": "resource_owner_password_credentials",
+              "accessTokenUrl": "https://auth.deliverart.it/oauth",
+              "credentials": {
+                "clientId": "{{clientId}}",
+                "clientSecret": "{{clientSecret}}"
+              }
+            }
+          },
+          "docs": "Menu — Categories / Delete. Deliverart RPC-style endpoint (POST only)."
+        },
+        {
+          "info": {
+            "name": "Menu — Categories / Translate",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://pubapi.deliverart.it/menu/category/:id/translate",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            },
+            "auth": {
+              "type": "oauth2",
+              "flow": "resource_owner_password_credentials",
+              "accessTokenUrl": "https://auth.deliverart.it/oauth",
+              "credentials": {
+                "clientId": "{{clientId}}",
+                "clientSecret": "{{clientSecret}}"
+              }
+            }
+          },
+          "docs": "Menu — Categories / Translate. Deliverart RPC-style endpoint (POST only)."
+        },
+        {
+          "info": {
+            "name": "Menu — Categories / Sort",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://pubapi.deliverart.it/menu/category/:id/sort",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            },
+            "auth": {
+              "type": "oauth2",
+              "flow": "resource_owner_password_credentials",
+              "accessTokenUrl": "https://auth.deliverart.it/oauth",
+              "credentials": {
+                "clientId": "{{clientId}}",
+                "clientSecret": "{{clientSecret}}"
+              }
+            }
+          },
+          "docs": "Menu — Categories / Sort. Deliverart RPC-style endpoint (POST only)."
+        },
+        {
+          "info": {
+            "name": "Menu — Categories / Media / Upload",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://pubapi.deliverart.it/menu/category/:id/media/upload",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            },
+            "auth": {
+              "type": "oauth2",
+              "flow": "resource_owner_password_credentials",
+              "accessTokenUrl": "https://auth.deliverart.it/oauth",
+              "credentials": {
+                "clientId": "{{clientId}}",
+                "clientSecret": "{{clientSecret}}"
+              }
+            }
+          },
+          "docs": "Menu — Categories / Media / Upload. Deliverart RPC-style endpoint (POST only)."
+        },
+        {
+          "info": {
+            "name": "Menu — Categories / Media / Remove",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://pubapi.deliverart.it/menu/category/:id/media/remove",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            },
+            "auth": {
+              "type": "oauth2",
+              "flow": "resource_owner_password_credentials",
+              "accessTokenUrl": "https://auth.deliverart.it/oauth",
+              "credentials": {
+                "clientId": "{{clientId}}",
+                "clientSecret": "{{clientSecret}}"
+              }
+            }
+          },
+          "docs": "Menu — Categories / Media / Remove. Deliverart RPC-style endpoint (POST only)."
+        },
+        {
+          "info": {
+            "name": "Menu — Allergens",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://pubapi.deliverart.it/menu/allergens",
+            "auth": {
+              "type": "oauth2",
+              "flow": "resource_owner_password_credentials",
+              "accessTokenUrl": "https://auth.deliverart.it/oauth",
+              "credentials": {
+                "clientId": "{{clientId}}",
+                "clientSecret": "{{clientSecret}}"
+              }
+            }
+          },
+          "docs": "Menu — Allergens. Deliverart RPC-style endpoint (GET only)."
+        },
+        {
+          "info": {
+            "name": "Menu — Allergens / Detail",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://pubapi.deliverart.it/menu/allergen/:id/detail",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ],
+            "auth": {
+              "type": "oauth2",
+              "flow": "resource_owner_password_credentials",
+              "accessTokenUrl": "https://auth.deliverart.it/oauth",
+              "credentials": {
+                "clientId": "{{clientId}}",
+                "clientSecret": "{{clientSecret}}"
+              }
+            }
+          },
+          "docs": "Menu — Allergens / Detail. Deliverart RPC-style endpoint (GET only)."
+        },
+        {
+          "info": {
+            "name": "Menu — Allergens / Create",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://pubapi.deliverart.it/menu/allergen/create",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            },
+            "auth": {
+              "type": "oauth2",
+              "flow": "resource_owner_password_credentials",
+              "accessTokenUrl": "https://auth.deliverart.it/oauth",
+              "credentials": {
+                "clientId": "{{clientId}}",
+                "clientSecret": "{{clientSecret}}"
+              }
+            }
+          },
+          "docs": "Menu — Allergens / Create. Deliverart RPC-style endpoint (POST only)."
+        },
+        {
+          "info": {
+            "name": "Menu — Allergens / Update",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://pubapi.deliverart.it/menu/allergen/:id/update",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            },
+            "auth": {
+              "type": "oauth2",
+              "flow": "resource_owner_password_credentials",
+              "accessTokenUrl": "https://auth.deliverart.it/oauth",
+              "credentials": {
+                "clientId": "{{clientId}}",
+                "clientSecret": "{{clientSecret}}"
+              }
+            }
+          },
+          "docs": "Menu — Allergens / Update. Deliverart RPC-style endpoint (POST only)."
+        },
+        {
+          "info": {
+            "name": "Menu — Allergens / Update metadata",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://pubapi.deliverart.it/menu/allergen/:id/update/meta",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            },
+            "auth": {
+              "type": "oauth2",
+              "flow": "resource_owner_password_credentials",
+              "accessTokenUrl": "https://auth.deliverart.it/oauth",
+              "credentials": {
+                "clientId": "{{clientId}}",
+                "clientSecret": "{{clientSecret}}"
+              }
+            }
+          },
+          "docs": "Menu — Allergens / Update metadata. Deliverart RPC-style endpoint (POST only)."
+        },
+        {
+          "info": {
+            "name": "Menu — Allergens / Delete",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://pubapi.deliverart.it/menu/allergen/:id/delete",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            },
+            "auth": {
+              "type": "oauth2",
+              "flow": "resource_owner_password_credentials",
+              "accessTokenUrl": "https://auth.deliverart.it/oauth",
+              "credentials": {
+                "clientId": "{{clientId}}",
+                "clientSecret": "{{clientSecret}}"
+              }
+            }
+          },
+          "docs": "Menu — Allergens / Delete. Deliverart RPC-style endpoint (POST only)."
+        },
+        {
+          "info": {
+            "name": "Menu — Allergens / Translate",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://pubapi.deliverart.it/menu/allergen/:id/translate",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            },
+            "auth": {
+              "type": "oauth2",
+              "flow": "resource_owner_password_credentials",
+              "accessTokenUrl": "https://auth.deliverart.it/oauth",
+              "credentials": {
+                "clientId": "{{clientId}}",
+                "clientSecret": "{{clientSecret}}"
+              }
+            }
+          },
+          "docs": "Menu — Allergens / Translate. Deliverart RPC-style endpoint (POST only)."
+        },
+        {
+          "info": {
+            "name": "Menu — Ingredients",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://pubapi.deliverart.it/menu/ingredients",
+            "auth": {
+              "type": "oauth2",
+              "flow": "resource_owner_password_credentials",
+              "accessTokenUrl": "https://auth.deliverart.it/oauth",
+              "credentials": {
+                "clientId": "{{clientId}}",
+                "clientSecret": "{{clientSecret}}"
+              }
+            }
+          },
+          "docs": "Menu — Ingredients. Deliverart RPC-style endpoint (GET only)."
+        },
+        {
+          "info": {
+            "name": "Menu — Ingredients / Detail",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://pubapi.deliverart.it/menu/ingredient/:id/detail",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ],
+            "auth": {
+              "type": "oauth2",
+              "flow": "resource_owner_password_credentials",
+              "accessTokenUrl": "https://auth.deliverart.it/oauth",
+              "credentials": {
+                "clientId": "{{clientId}}",
+                "clientSecret": "{{clientSecret}}"
+              }
+            }
+          },
+          "docs": "Menu — Ingredients / Detail. Deliverart RPC-style endpoint (GET only)."
+        },
+        {
+          "info": {
+            "name": "Menu — Ingredients / Create",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://pubapi.deliverart.it/menu/ingredient/create",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            },
+            "auth": {
+              "type": "oauth2",
+              "flow": "resource_owner_password_credentials",
+              "accessTokenUrl": "https://auth.deliverart.it/oauth",
+              "credentials": {
+                "clientId": "{{clientId}}",
+                "clientSecret": "{{clientSecret}}"
+              }
+            }
+          },
+          "docs": "Menu — Ingredients / Create. Deliverart RPC-style endpoint (POST only)."
+        },
+        {
+          "info": {
+            "name": "Menu — Ingredients / Update",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://pubapi.deliverart.it/menu/ingredient/:id/update",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            },
+            "auth": {
+              "type": "oauth2",
+              "flow": "resource_owner_password_credentials",
+              "accessTokenUrl": "https://auth.deliverart.it/oauth",
+              "credentials": {
+                "clientId": "{{clientId}}",
+                "clientSecret": "{{clientSecret}}"
+              }
+            }
+          },
+          "docs": "Menu — Ingredients / Update. Deliverart RPC-style endpoint (POST only)."
+        },
+        {
+          "info": {
+            "name": "Menu — Ingredients / Update metadata",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://pubapi.deliverart.it/menu/ingredient/:id/update/meta",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            },
+            "auth": {
+              "type": "oauth2",
+              "flow": "resource_owner_password_credentials",
+              "accessTokenUrl": "https://auth.deliverart.it/oauth",
+              "credentials": {
+                "clientId": "{{clientId}}",
+                "clientSecret": "{{clientSecret}}"
+              }
+            }
+          },
+          "docs": "Menu — Ingredients / Update metadata. Deliverart RPC-style endpoint (POST only)."
+        },
+        {
+          "info": {
+            "name": "Menu — Ingredients / Delete",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://pubapi.deliverart.it/menu/ingredient/:id/delete",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            },
+            "auth": {
+              "type": "oauth2",
+              "flow": "resource_owner_password_credentials",
+              "accessTokenUrl": "https://auth.deliverart.it/oauth",
+              "credentials": {
+                "clientId": "{{clientId}}",
+                "clientSecret": "{{clientSecret}}"
+              }
+            }
+          },
+          "docs": "Menu — Ingredients / Delete. Deliverart RPC-style endpoint (POST only)."
+        },
+        {
+          "info": {
+            "name": "Menu — Ingredients / Translate",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://pubapi.deliverart.it/menu/ingredient/:id/translate",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            },
+            "auth": {
+              "type": "oauth2",
+              "flow": "resource_owner_password_credentials",
+              "accessTokenUrl": "https://auth.deliverart.it/oauth",
+              "credentials": {
+                "clientId": "{{clientId}}",
+                "clientSecret": "{{clientSecret}}"
+              }
+            }
+          },
+          "docs": "Menu — Ingredients / Translate. Deliverart RPC-style endpoint (POST only)."
+        },
+        {
+          "info": {
+            "name": "Menu — Items / Detail",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://pubapi.deliverart.it/menu/item/:id/detail",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ],
+            "auth": {
+              "type": "oauth2",
+              "flow": "resource_owner_password_credentials",
+              "accessTokenUrl": "https://auth.deliverart.it/oauth",
+              "credentials": {
+                "clientId": "{{clientId}}",
+                "clientSecret": "{{clientSecret}}"
+              }
+            }
+          },
+          "docs": "Menu — Items / Detail. Deliverart RPC-style endpoint (GET only)."
+        },
+        {
+          "info": {
+            "name": "Menu — Items / Create",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://pubapi.deliverart.it/menu/item/create",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            },
+            "auth": {
+              "type": "oauth2",
+              "flow": "resource_owner_password_credentials",
+              "accessTokenUrl": "https://auth.deliverart.it/oauth",
+              "credentials": {
+                "clientId": "{{clientId}}",
+                "clientSecret": "{{clientSecret}}"
+              }
+            }
+          },
+          "docs": "Menu — Items / Create. Deliverart RPC-style endpoint (POST only)."
+        },
+        {
+          "info": {
+            "name": "Menu — Items / Update",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://pubapi.deliverart.it/menu/item/:id/update",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            },
+            "auth": {
+              "type": "oauth2",
+              "flow": "resource_owner_password_credentials",
+              "accessTokenUrl": "https://auth.deliverart.it/oauth",
+              "credentials": {
+                "clientId": "{{clientId}}",
+                "clientSecret": "{{clientSecret}}"
+              }
+            }
+          },
+          "docs": "Menu — Items / Update. Deliverart RPC-style endpoint (POST only)."
+        },
+        {
+          "info": {
+            "name": "Menu — Items / Update metadata",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://pubapi.deliverart.it/menu/item/:id/update/meta",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            },
+            "auth": {
+              "type": "oauth2",
+              "flow": "resource_owner_password_credentials",
+              "accessTokenUrl": "https://auth.deliverart.it/oauth",
+              "credentials": {
+                "clientId": "{{clientId}}",
+                "clientSecret": "{{clientSecret}}"
+              }
+            }
+          },
+          "docs": "Menu — Items / Update metadata. Deliverart RPC-style endpoint (POST only)."
+        },
+        {
+          "info": {
+            "name": "Menu — Items / Delete",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://pubapi.deliverart.it/menu/item/:id/delete",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            },
+            "auth": {
+              "type": "oauth2",
+              "flow": "resource_owner_password_credentials",
+              "accessTokenUrl": "https://auth.deliverart.it/oauth",
+              "credentials": {
+                "clientId": "{{clientId}}",
+                "clientSecret": "{{clientSecret}}"
+              }
+            }
+          },
+          "docs": "Menu — Items / Delete. Deliverart RPC-style endpoint (POST only)."
+        },
+        {
+          "info": {
+            "name": "Menu — Items / Suspend",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://pubapi.deliverart.it/menu/item/:id/suspend",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            },
+            "auth": {
+              "type": "oauth2",
+              "flow": "resource_owner_password_credentials",
+              "accessTokenUrl": "https://auth.deliverart.it/oauth",
+              "credentials": {
+                "clientId": "{{clientId}}",
+                "clientSecret": "{{clientSecret}}"
+              }
+            }
+          },
+          "docs": "Menu — Items / Suspend. Deliverart RPC-style endpoint (POST only)."
+        },
+        {
+          "info": {
+            "name": "Menu — Items / Resume",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://pubapi.deliverart.it/menu/item/:id/resume",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            },
+            "auth": {
+              "type": "oauth2",
+              "flow": "resource_owner_password_credentials",
+              "accessTokenUrl": "https://auth.deliverart.it/oauth",
+              "credentials": {
+                "clientId": "{{clientId}}",
+                "clientSecret": "{{clientSecret}}"
+              }
+            }
+          },
+          "docs": "Menu — Items / Resume. Deliverart RPC-style endpoint (POST only)."
+        },
+        {
+          "info": {
+            "name": "Menu — Items / Translate",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://pubapi.deliverart.it/menu/item/:id/translate",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            },
+            "auth": {
+              "type": "oauth2",
+              "flow": "resource_owner_password_credentials",
+              "accessTokenUrl": "https://auth.deliverart.it/oauth",
+              "credentials": {
+                "clientId": "{{clientId}}",
+                "clientSecret": "{{clientSecret}}"
+              }
+            }
+          },
+          "docs": "Menu — Items / Translate. Deliverart RPC-style endpoint (POST only)."
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

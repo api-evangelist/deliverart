@@ -2,7 +2,6 @@ generated: '2026-07-18'
 method: derived
 source: openapi/deliverart-openapi.yml
 status: candidate
-
 server:
   name: deliverart
   transport: http
@@ -400,3 +399,9 @@ tools:
 - name: takeAwayDetail
   description: Take away — Detail
   source_operation: openapi/deliverart-openapi.yml#takeAwayDetail
+deployment:
+  mode: none
+  verified: derived
+  tools: 130
+  checked: '2026-08-12'
+  source: catalog MCP census

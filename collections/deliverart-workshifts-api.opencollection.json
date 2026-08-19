@@ -1,0 +1,163 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Deliverart Addresses Workshifts API",
+    "version": "1.0"
+  },
+  "request": {
+    "auth": {
+      "type": "oauth2",
+      "flow": "resource_owner_password_credentials",
+      "accessTokenUrl": "https://auth.deliverart.it/oauth",
+      "credentials": {
+        "clientId": "{{clientId}}",
+        "clientSecret": "{{clientSecret}}"
+      }
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Workshifts",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Workshifts — Detail",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://pubapi.deliverart.it/workshift/:id/detail",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ],
+            "auth": {
+              "type": "oauth2",
+              "flow": "resource_owner_password_credentials",
+              "accessTokenUrl": "https://auth.deliverart.it/oauth",
+              "credentials": {
+                "clientId": "{{clientId}}",
+                "clientSecret": "{{clientSecret}}"
+              }
+            }
+          },
+          "docs": "Workshifts — Detail. Deliverart RPC-style endpoint (GET only)."
+        },
+        {
+          "info": {
+            "name": "Workshifts — Delivery times",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://pubapi.deliverart.it/workshift/:workshiftId/address/:addressId/delivery/times",
+            "params": [
+              {
+                "name": "workshiftId",
+                "value": "",
+                "type": "path"
+              },
+              {
+                "name": "addressId",
+                "value": "",
+                "type": "path"
+              }
+            ],
+            "auth": {
+              "type": "oauth2",
+              "flow": "resource_owner_password_credentials",
+              "accessTokenUrl": "https://auth.deliverart.it/oauth",
+              "credentials": {
+                "clientId": "{{clientId}}",
+                "clientSecret": "{{clientSecret}}"
+              }
+            }
+          },
+          "docs": "Workshifts — Delivery times. Deliverart RPC-style endpoint (GET only)."
+        },
+        {
+          "info": {
+            "name": "Workshifts — Take away times",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://pubapi.deliverart.it/workshift/:workshiftId/take-away/times",
+            "params": [
+              {
+                "name": "workshiftId",
+                "value": "",
+                "type": "path"
+              }
+            ],
+            "auth": {
+              "type": "oauth2",
+              "flow": "resource_owner_password_credentials",
+              "accessTokenUrl": "https://auth.deliverart.it/oauth",
+              "credentials": {
+                "clientId": "{{clientId}}",
+                "clientSecret": "{{clientSecret}}"
+              }
+            }
+          },
+          "docs": "Workshifts — Take away times. Deliverart RPC-style endpoint (GET only)."
+        },
+        {
+          "info": {
+            "name": "Workshifts — Invitation / Accept",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://pubapi.deliverart.it/workshift/invitation/accept",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            },
+            "auth": {
+              "type": "oauth2",
+              "flow": "resource_owner_password_credentials",
+              "accessTokenUrl": "https://auth.deliverart.it/oauth",
+              "credentials": {
+                "clientId": "{{clientId}}",
+                "clientSecret": "{{clientSecret}}"
+              }
+            }
+          },
+          "docs": "Workshifts — Invitation / Accept. Deliverart RPC-style endpoint (POST only)."
+        },
+        {
+          "info": {
+            "name": "Workshifts — Invitation / Reject",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://pubapi.deliverart.it/workshift/invitation/reject",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            },
+            "auth": {
+              "type": "oauth2",
+              "flow": "resource_owner_password_credentials",
+              "accessTokenUrl": "https://auth.deliverart.it/oauth",
+              "credentials": {
+                "clientId": "{{clientId}}",
+                "clientSecret": "{{clientSecret}}"
+              }
+            }
+          },
+          "docs": "Workshifts — Invitation / Reject. Deliverart RPC-style endpoint (POST only)."
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

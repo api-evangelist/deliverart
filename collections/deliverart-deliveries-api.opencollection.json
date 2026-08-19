@@ -1,0 +1,204 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Deliverart Addresses Deliveries API",
+    "version": "1.0"
+  },
+  "request": {
+    "auth": {
+      "type": "oauth2",
+      "flow": "resource_owner_password_credentials",
+      "accessTokenUrl": "https://auth.deliverart.it/oauth",
+      "credentials": {
+        "clientId": "{{clientId}}",
+        "clientSecret": "{{clientSecret}}"
+      }
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Deliveries",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Deliveries — Create",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://pubapi.deliverart.it/delivery/create",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            },
+            "auth": {
+              "type": "oauth2",
+              "flow": "resource_owner_password_credentials",
+              "accessTokenUrl": "https://auth.deliverart.it/oauth",
+              "credentials": {
+                "clientId": "{{clientId}}",
+                "clientSecret": "{{clientSecret}}"
+              }
+            }
+          },
+          "docs": "Deliveries — Create. Deliverart RPC-style endpoint (POST only)."
+        },
+        {
+          "info": {
+            "name": "Deliveries — Detail",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://pubapi.deliverart.it/delivery/:id/detail",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ],
+            "auth": {
+              "type": "oauth2",
+              "flow": "resource_owner_password_credentials",
+              "accessTokenUrl": "https://auth.deliverart.it/oauth",
+              "credentials": {
+                "clientId": "{{clientId}}",
+                "clientSecret": "{{clientSecret}}"
+              }
+            }
+          },
+          "docs": "Deliveries — Detail. Deliverart RPC-style endpoint (GET only)."
+        },
+        {
+          "info": {
+            "name": "Deliveries — Take charge",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://pubapi.deliverart.it/delivery/:id/take",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            },
+            "auth": {
+              "type": "oauth2",
+              "flow": "resource_owner_password_credentials",
+              "accessTokenUrl": "https://auth.deliverart.it/oauth",
+              "credentials": {
+                "clientId": "{{clientId}}",
+                "clientSecret": "{{clientSecret}}"
+              }
+            }
+          },
+          "docs": "Deliveries — Take charge. Deliverart RPC-style endpoint (POST only)."
+        },
+        {
+          "info": {
+            "name": "Deliveries — Start",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://pubapi.deliverart.it/delivery/:id/start",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            },
+            "auth": {
+              "type": "oauth2",
+              "flow": "resource_owner_password_credentials",
+              "accessTokenUrl": "https://auth.deliverart.it/oauth",
+              "credentials": {
+                "clientId": "{{clientId}}",
+                "clientSecret": "{{clientSecret}}"
+              }
+            }
+          },
+          "docs": "Deliveries — Start. Deliverart RPC-style endpoint (POST only)."
+        },
+        {
+          "info": {
+            "name": "Deliveries — Order delivered",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://pubapi.deliverart.it/delivery/order/:id/delivered",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            },
+            "auth": {
+              "type": "oauth2",
+              "flow": "resource_owner_password_credentials",
+              "accessTokenUrl": "https://auth.deliverart.it/oauth",
+              "credentials": {
+                "clientId": "{{clientId}}",
+                "clientSecret": "{{clientSecret}}"
+              }
+            }
+          },
+          "docs": "Deliveries — Order delivered. Deliverart RPC-style endpoint (POST only)."
+        },
+        {
+          "info": {
+            "name": "Deliveries — End",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://pubapi.deliverart.it/delivery/:id/end",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            },
+            "auth": {
+              "type": "oauth2",
+              "flow": "resource_owner_password_credentials",
+              "accessTokenUrl": "https://auth.deliverart.it/oauth",
+              "credentials": {
+                "clientId": "{{clientId}}",
+                "clientSecret": "{{clientSecret}}"
+              }
+            }
+          },
+          "docs": "Deliveries — End. Deliverart RPC-style endpoint (POST only)."
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

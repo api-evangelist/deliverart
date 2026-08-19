@@ -1,0 +1,544 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Deliverart Addresses Orders API",
+    "version": "1.0"
+  },
+  "request": {
+    "auth": {
+      "type": "oauth2",
+      "flow": "resource_owner_password_credentials",
+      "accessTokenUrl": "https://auth.deliverart.it/oauth",
+      "credentials": {
+        "clientId": "{{clientId}}",
+        "clientSecret": "{{clientSecret}}"
+      }
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Orders",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Orders — Detail",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://pubapi.deliverart.it/order/:id/detail",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ],
+            "auth": {
+              "type": "oauth2",
+              "flow": "resource_owner_password_credentials",
+              "accessTokenUrl": "https://auth.deliverart.it/oauth",
+              "credentials": {
+                "clientId": "{{clientId}}",
+                "clientSecret": "{{clientSecret}}"
+              }
+            }
+          },
+          "docs": "Orders — Detail. Deliverart RPC-style endpoint (GET only)."
+        },
+        {
+          "info": {
+            "name": "Orders — Detail / Delivery",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://pubapi.deliverart.it/order/:id/delivery/detail",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ],
+            "auth": {
+              "type": "oauth2",
+              "flow": "resource_owner_password_credentials",
+              "accessTokenUrl": "https://auth.deliverart.it/oauth",
+              "credentials": {
+                "clientId": "{{clientId}}",
+                "clientSecret": "{{clientSecret}}"
+              }
+            }
+          },
+          "docs": "Orders — Detail / Delivery. Deliverart RPC-style endpoint (GET only)."
+        },
+        {
+          "info": {
+            "name": "Orders — Detail / Take away",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://pubapi.deliverart.it/order/:id/take-away/detail",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ],
+            "auth": {
+              "type": "oauth2",
+              "flow": "resource_owner_password_credentials",
+              "accessTokenUrl": "https://auth.deliverart.it/oauth",
+              "credentials": {
+                "clientId": "{{clientId}}",
+                "clientSecret": "{{clientSecret}}"
+              }
+            }
+          },
+          "docs": "Orders — Detail / Take away. Deliverart RPC-style endpoint (GET only)."
+        },
+        {
+          "info": {
+            "name": "Orders — Init",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://pubapi.deliverart.it/pos/:id/order/init",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            },
+            "auth": {
+              "type": "oauth2",
+              "flow": "resource_owner_password_credentials",
+              "accessTokenUrl": "https://auth.deliverart.it/oauth",
+              "credentials": {
+                "clientId": "{{clientId}}",
+                "clientSecret": "{{clientSecret}}"
+              }
+            }
+          },
+          "docs": "Orders — Init. Deliverart RPC-style endpoint (POST only)."
+        },
+        {
+          "info": {
+            "name": "Orders — Abort",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://pubapi.deliverart.it/order/:id/abort",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            },
+            "auth": {
+              "type": "oauth2",
+              "flow": "resource_owner_password_credentials",
+              "accessTokenUrl": "https://auth.deliverart.it/oauth",
+              "credentials": {
+                "clientId": "{{clientId}}",
+                "clientSecret": "{{clientSecret}}"
+              }
+            }
+          },
+          "docs": "Orders — Abort. Deliverart RPC-style endpoint (POST only)."
+        },
+        {
+          "info": {
+            "name": "Orders — Update / Note",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://pubapi.deliverart.it/order/:id/update/note",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            },
+            "auth": {
+              "type": "oauth2",
+              "flow": "resource_owner_password_credentials",
+              "accessTokenUrl": "https://auth.deliverart.it/oauth",
+              "credentials": {
+                "clientId": "{{clientId}}",
+                "clientSecret": "{{clientSecret}}"
+              }
+            }
+          },
+          "docs": "Orders — Update / Note. Deliverart RPC-style endpoint (POST only)."
+        },
+        {
+          "info": {
+            "name": "Orders — Update / Payment",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://pubapi.deliverart.it/order/:id/update/payment",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            },
+            "auth": {
+              "type": "oauth2",
+              "flow": "resource_owner_password_credentials",
+              "accessTokenUrl": "https://auth.deliverart.it/oauth",
+              "credentials": {
+                "clientId": "{{clientId}}",
+                "clientSecret": "{{clientSecret}}"
+              }
+            }
+          },
+          "docs": "Orders — Update / Payment. Deliverart RPC-style endpoint (POST only)."
+        },
+        {
+          "info": {
+            "name": "Orders — Update / Customer",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://pubapi.deliverart.it/order/:id/update/customer",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            },
+            "auth": {
+              "type": "oauth2",
+              "flow": "resource_owner_password_credentials",
+              "accessTokenUrl": "https://auth.deliverart.it/oauth",
+              "credentials": {
+                "clientId": "{{clientId}}",
+                "clientSecret": "{{clientSecret}}"
+              }
+            }
+          },
+          "docs": "Orders — Update / Customer. Deliverart RPC-style endpoint (POST only)."
+        },
+        {
+          "info": {
+            "name": "Orders — Update / Customer address",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://pubapi.deliverart.it/order/:id/update/customer-address",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            },
+            "auth": {
+              "type": "oauth2",
+              "flow": "resource_owner_password_credentials",
+              "accessTokenUrl": "https://auth.deliverart.it/oauth",
+              "credentials": {
+                "clientId": "{{clientId}}",
+                "clientSecret": "{{clientSecret}}"
+              }
+            }
+          },
+          "docs": "Orders — Update / Customer address. Deliverart RPC-style endpoint (POST only)."
+        },
+        {
+          "info": {
+            "name": "Orders — Update / Customer business profile",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://pubapi.deliverart.it/order/:id/update/customer-business-profile",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            },
+            "auth": {
+              "type": "oauth2",
+              "flow": "resource_owner_password_credentials",
+              "accessTokenUrl": "https://auth.deliverart.it/oauth",
+              "credentials": {
+                "clientId": "{{clientId}}",
+                "clientSecret": "{{clientSecret}}"
+              }
+            }
+          },
+          "docs": "Orders — Update / Customer business profile. Deliverart RPC-style endpoint (POST only)."
+        },
+        {
+          "info": {
+            "name": "Orders — Update / Items",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://pubapi.deliverart.it/order/:id/update/menu/items",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            },
+            "auth": {
+              "type": "oauth2",
+              "flow": "resource_owner_password_credentials",
+              "accessTokenUrl": "https://auth.deliverart.it/oauth",
+              "credentials": {
+                "clientId": "{{clientId}}",
+                "clientSecret": "{{clientSecret}}"
+              }
+            }
+          },
+          "docs": "Orders — Update / Items. Deliverart RPC-style endpoint (POST only)."
+        },
+        {
+          "info": {
+            "name": "Orders — Cost / Create",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://pubapi.deliverart.it/order/:id/cost/create",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            },
+            "auth": {
+              "type": "oauth2",
+              "flow": "resource_owner_password_credentials",
+              "accessTokenUrl": "https://auth.deliverart.it/oauth",
+              "credentials": {
+                "clientId": "{{clientId}}",
+                "clientSecret": "{{clientSecret}}"
+              }
+            }
+          },
+          "docs": "Orders — Cost / Create. Deliverart RPC-style endpoint (POST only)."
+        },
+        {
+          "info": {
+            "name": "Orders — Cost / Delete",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://pubapi.deliverart.it/order/cost/:id/delete",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            },
+            "auth": {
+              "type": "oauth2",
+              "flow": "resource_owner_password_credentials",
+              "accessTokenUrl": "https://auth.deliverart.it/oauth",
+              "credentials": {
+                "clientId": "{{clientId}}",
+                "clientSecret": "{{clientSecret}}"
+              }
+            }
+          },
+          "docs": "Orders — Cost / Delete. Deliverart RPC-style endpoint (POST only)."
+        },
+        {
+          "info": {
+            "name": "Orders — Unset / Customer",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://pubapi.deliverart.it/order/:id/unset/customer",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            },
+            "auth": {
+              "type": "oauth2",
+              "flow": "resource_owner_password_credentials",
+              "accessTokenUrl": "https://auth.deliverart.it/oauth",
+              "credentials": {
+                "clientId": "{{clientId}}",
+                "clientSecret": "{{clientSecret}}"
+              }
+            }
+          },
+          "docs": "Orders — Unset / Customer. Deliverart RPC-style endpoint (POST only)."
+        },
+        {
+          "info": {
+            "name": "Orders — Unset / Customer address",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://pubapi.deliverart.it/order/:id/unset/customer-address",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            },
+            "auth": {
+              "type": "oauth2",
+              "flow": "resource_owner_password_credentials",
+              "accessTokenUrl": "https://auth.deliverart.it/oauth",
+              "credentials": {
+                "clientId": "{{clientId}}",
+                "clientSecret": "{{clientSecret}}"
+              }
+            }
+          },
+          "docs": "Orders — Unset / Customer address. Deliverart RPC-style endpoint (POST only)."
+        },
+        {
+          "info": {
+            "name": "Orders — Unset / Customer business profile",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://pubapi.deliverart.it/order/:id/unset/customer-business-profile",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            },
+            "auth": {
+              "type": "oauth2",
+              "flow": "resource_owner_password_credentials",
+              "accessTokenUrl": "https://auth.deliverart.it/oauth",
+              "credentials": {
+                "clientId": "{{clientId}}",
+                "clientSecret": "{{clientSecret}}"
+              }
+            }
+          },
+          "docs": "Orders — Unset / Customer business profile. Deliverart RPC-style endpoint (POST only)."
+        },
+        {
+          "info": {
+            "name": "Orders — Delete",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://pubapi.deliverart.it/order/:id/delete",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            },
+            "auth": {
+              "type": "oauth2",
+              "flow": "resource_owner_password_credentials",
+              "accessTokenUrl": "https://auth.deliverart.it/oauth",
+              "credentials": {
+                "clientId": "{{clientId}}",
+                "clientSecret": "{{clientSecret}}"
+              }
+            }
+          },
+          "docs": "Orders — Delete. Deliverart RPC-style endpoint (POST only)."
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}
