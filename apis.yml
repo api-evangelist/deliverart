@@ -34,6 +34,15 @@ modified: '2026-07-18'
 tags:
 - Company
 - Food Delivery
+- Restaurant
+- Order Management
+- Logistics
+- Delivery
+- Menu Management
+- Point-of-Sale
+tags_raw:
+- Company
+- Food Delivery
 - Restaurants
 - Order Management
 - Logistics
@@ -84,6 +93,8 @@ apis:
   humanURL: https://apidoc.deliverart.it/
   baseURL: https://pubapi.deliverart.it
   tags:
+  - Customer Addresses
+  tags_raw:
   - Customer addresses
   properties:
   - type: OpenAPI
@@ -181,6 +192,8 @@ apis:
   humanURL: https://apidoc.deliverart.it/
   baseURL: https://pubapi.deliverart.it
   tags:
+  - Menus
+  tags_raw:
   - Menu
   properties:
   - type: OpenAPI
@@ -197,6 +210,8 @@ apis:
   humanURL: https://apidoc.deliverart.it/
   baseURL: https://pubapi.deliverart.it
   tags:
+  - Order
+  tags_raw:
   - Orders
   properties:
   - type: OpenAPI
@@ -293,6 +308,8 @@ apis:
   humanURL: https://apidoc.deliverart.it/
   baseURL: https://pubapi.deliverart.it
   tags:
+  - Work Shifts
+  tags_raw:
   - Workshifts
   properties:
   - type: OpenAPI
