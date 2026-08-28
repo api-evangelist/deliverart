@@ -8,6 +8,18 @@ description: >-
   public Deliverart API is an RPC-style HTTPS API (GET for reads, POST for writes) covering orders,
   menu, customers, points of sale, workshifts, deliveries and reservations, with API key and OAuth2
   authentication. Deliverart also ships a modular first-party JavaScript SDK suite on npm.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: true
+  label: Hosted service · you call their endpoint
+  confidence: high
+  source:
+  - openapi
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: self-serve
