@@ -333,6 +333,9 @@ apis:
   - type: GettingStarted
     url: https://apidoc.deliverart.it/
 common:
+- type: CapabilityMap
+  url: capabilities/deliverart-capability-edges.yml
+  name: Deliverart Business Capability Map
 - type: MCPServer
   url: mcp/deliverart-mcp.yml
 - type: Authentication
