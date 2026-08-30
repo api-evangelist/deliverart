@@ -105,7 +105,7 @@ apis:
   humanURL: https://apidoc.deliverart.it/
   baseURL: https://pubapi.deliverart.it
   tags:
-  - Customer Addresses
+  - Customer addresses
   tags_raw:
   - Customer addresses
   properties:
@@ -320,7 +320,7 @@ apis:
   humanURL: https://apidoc.deliverart.it/
   baseURL: https://pubapi.deliverart.it
   tags:
-  - Work Shifts
+  - Workshifts
   tags_raw:
   - Workshifts
   properties:
