@@ -314,18 +314,16 @@ apis:
     url: https://apidoc.deliverart.it/
   - type: GettingStarted
     url: https://apidoc.deliverart.it/
-- aid: deliverart:deliverart-workshifts-api
-  name: Deliverart Workshifts API
-  description: The Workshifts API from Deliverart — 5 operation(s) for workshifts.
+- aid: deliverart:deliverart-work-shifts-api
+  name: Deliverart Work Shifts API
+  description: The Work Shifts API from Deliverart — 5 operation(s) for work shifts.
   humanURL: https://apidoc.deliverart.it/
   baseURL: https://pubapi.deliverart.it
   tags:
   - Work Shifts
-  tags_raw:
-  - Workshifts
   properties:
   - type: OpenAPI
-    url: openapi/deliverart-workshifts-api-openapi.yml
+    url: openapi/deliverart-work-shifts-api-openapi.yml
   - type: Documentation
     url: https://apidoc.deliverart.it/
   - type: APIReference
