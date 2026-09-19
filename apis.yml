@@ -240,6 +240,8 @@ apis:
   humanURL: https://apidoc.deliverart.it/
   baseURL: https://pubapi.deliverart.it
   tags:
+  - Password Reset
+  tags_raw:
   - Password reset
   properties:
   - type: OpenAPI
