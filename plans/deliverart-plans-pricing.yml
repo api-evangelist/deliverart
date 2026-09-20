@@ -1,0 +1,43 @@
+# Pricing transcribed from the provider's own page — see provenance. Numbers are quoted, not derived.
+generated: '2026-09-20'
+method: searched
+source: https://www.deliverart.it/prezzi/
+sources:
+- https://www.deliverart.it/prezzi/
+provenance:
+  tool: planning/api-economics/harvest_pricing.py
+  run: 20260920T120546
+  grounding: every price_text was found verbatim in the fetched page text
+audience: business-product
+pricing_basis: tiered-subscription
+published: true
+note: Italian pricing page with three annual plans; activation costs quoted separately ('L'attivazione
+  è quotata in fase di preventivo'). Page states no commissions on orders and fixed fee regardless of
+  order volume.
+plan_count: 3
+currency: EUR
+plans:
+- name: START
+  price_text: 420€ anno (iva esclusa)
+  price: 420
+  currency: EUR
+  period: year
+  included_quota: Dashboard operativa, Deliverart Rider App (fino a 3 rider), DODS, gestione rider e giri
+    di consegna, monitoraggio in tempo reale, database clienti, e-commerce (web-app) inclusa, statistiche
+    e report, supporto tecnico in italiano
+- name: PREMIUM
+  price_text: 700€ anno
+  price: 700
+  currency: EUR
+  period: year
+  included_quota: Tutto il piano START più gestione avanzata ordini, Rider App fino a 10 rider, integrazione
+    piattaforme (Just Eat e Deliveroo incluse, Glovo da quotare), gestione menu centralizzata, e-commerce
+    inclusa, 1 integrazione a scelta, onboarding, supporto prioritario
+- name: ALL INCLUSIVE
+  price_text: 2.200€ fino a 5 punti vendita (iva esclusa)
+  price: 2200
+  currency: EUR
+  period: year
+  unit: fino a 5 punti vendita
+  included_quota: Tutte le funzionalità dei piani precedenti più Rider App illimitata, 5 ore di setup
+    e formazione, 5 e-commerce, multi-store e multi-brand, integrazioni illimitate, onboarding dedicato

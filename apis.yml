@@ -333,6 +333,8 @@ apis:
   - type: GettingStarted
     url: https://apidoc.deliverart.it/
 common:
+- type: Plans
+  url: plans/deliverart-plans-pricing.yml
 - type: CapabilityMap
   url: capabilities/deliverart-capability-edges.yml
   name: Deliverart Business Capability Map
