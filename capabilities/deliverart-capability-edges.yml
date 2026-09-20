@@ -11,7 +11,7 @@ capability_model:
   attribution: Turbo EA Capabilities by Vincent Verdet — Turbo EA, https://github.com/vincentmakes/turbo-ea-capabilities,
     CC BY 4.0
   notice: NOTICE
-edge_count: 3
+edge_count: 4
 edges:
 - tag: Deliveries
   spec_file: deliverart-deliveries-api-openapi.yml
@@ -33,6 +33,18 @@ edges:
   reason: Full lifecycle CRUD over customer records within a POS, plus retrieval of that customer's orders
     — a customer master data surface for the restaurant. Order listing is read-only context, not order
     management.
+- tag: Orders
+  spec_file: deliverart-orders-api-openapi.yml
+  capability_id: BC-520.40
+  capability_id_l1: BC-520
+  capability_name: Order Fulfilment Management
+  confidence: 0.75
+  evidence: POST /pos/{id}/order/init  ordersInit; GET /order/{id}/delivery/detail  Orders — Detail /
+    Delivery; POST /order/{id}/update/menu/items
+  reason: Operations create, amend (items, payment, customer address) and abort customer delivery/take-away
+    orders — order capture and fulfilment orchestration. Not a food-production capability; the cross-industry
+    order fulfilment capability is the honest fit.
+  recovered_from: vertical-agriculture-food-production-edges.json
 - tag: Customer addresses
   spec_file: deliverart-customer-addresses-api-openapi.yml
   capability_id: BC-420.10
