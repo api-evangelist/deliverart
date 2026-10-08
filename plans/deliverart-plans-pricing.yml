@@ -45,3 +45,32 @@ plans:
   unit: fino a 5 punti vendita
   included_quota: Tutte le funzionalità dei piani precedenti più Rider App illimitata, 5 ore di setup
     e formazione, 5 e-commerce, multi-store e multi-brand, integrazioni illimitate, onboarding dedicato
+x-canonical:
+  generated: '2026-10-08'
+  vocabulary: all/0-working/economics/plans-canonical.yml
+  models:
+  - subscription
+  units: []
+  plans:
+  - name: START
+    access: other
+    model: subscription
+    model_how: derived
+    units: []
+    periods:
+    - year
+  - name: PREMIUM
+    access: other
+    model: subscription
+    model_how: derived
+    units: []
+    periods:
+    - year
+  - name: ALL INCLUSIVE
+    access: other
+    model: subscription
+    model_how: derived
+    units:
+    - other
+    periods:
+    - year
