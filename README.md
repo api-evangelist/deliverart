@@ -64,6 +64,161 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Deliverart is a company surfaced as a portfolio company of techstars and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+Deliverart is food-delivery management software for restaurants and delivery businesses, founded in Italy and backed by Techstars. It centralizes orders from Just Eat, Glovo, Deliveroo, a restaurant's own website and phone into a single interface; synchronizes menus across sales channels; and manages riders, delivery routing, take-away, the Delivery Order Display System (DODS) and live tracking. The public Deliverart API is an RPC-style HTTPS API (GET for reads, POST for writes) covering orders, menu, customers, points of sale, workshifts, deliveries and reservations, with API key and OAuth2 authentication. Deliverart also ships a modular first-party JavaScript SDK suite on npm.
 
-Backed by: techstars — https://deliverart.it/
+**Areas:** Company · Food Delivery · Restaurant · Order Management · Logistics · Delivery · Menu Management · Point-of-Sale
+
+## Deliverart on APIs.io
+
+Everything profiled for Deliverart is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/deliverart/](https://apis.io/providers/deliverart/)** — or go straight to one of the APIs or properties below.
+
+### APIs (16)
+
+- [Deliverart Addresses API](https://apis.io/apis/deliverart/deliverart-addresses-api/) — The Addresses API from Deliverart — 3 operation(s) for addresses.
+- [Deliverart Companies API](https://apis.io/apis/deliverart/deliverart-companies-api/) — The Companies API from Deliverart — 2 operation(s) for companies.
+- [Deliverart Customer addresses API](https://apis.io/apis/deliverart/deliverart-customer-addresses-api/) — The Customer addresses API from Deliverart — 5 operation(s) for customer addresses.
+- [Deliverart Customer business profiles API](https://apis.io/apis/deliverart/deliverart-customer-business-profiles-api/) — The Customer business profiles API from Deliverart — 5 operation(s) for customer business profiles.
+- [Deliverart Customers API](https://apis.io/apis/deliverart/deliverart-customers-api/) — The Customers API from Deliverart — 5 operation(s) for customers.
+- [Deliverart Deliveries API](https://apis.io/apis/deliverart/deliverart-deliveries-api/) — The Deliveries API from Deliverart — 6 operation(s) for deliveries.
+- [Deliverart Delivery fee API](https://apis.io/apis/deliverart/deliverart-delivery-fee-api/) — The Delivery fee API from Deliverart — 3 operation(s) for delivery fee.
+- [Deliverart Me API](https://apis.io/apis/deliverart/deliverart-me-api/) — The Me API from Deliverart — 16 operation(s) for me.
+- [Deliverart Menu API](https://apis.io/apis/deliverart/deliverart-menu-api/) — The Menu API from Deliverart — 35 operation(s) for menu.
+- [Deliverart Orders API](https://apis.io/apis/deliverart/deliverart-orders-api/) — The Orders API from Deliverart — 17 operation(s) for orders.
+- [Deliverart Password reset API](https://apis.io/apis/deliverart/deliverart-password-reset-api/) — The Password reset API from Deliverart — 3 operation(s) for password reset.
+- [Deliverart Points of sale API](https://apis.io/apis/deliverart/deliverart-points-of-sale-api/) — The Points of sale API from Deliverart — 10 operation(s) for points of sale.
+- [Deliverart Registration API](https://apis.io/apis/deliverart/deliverart-registration-api/) — The Registration API from Deliverart — 3 operation(s) for registration.
+- [Deliverart Reservation API](https://apis.io/apis/deliverart/deliverart-reservation-api/) — The Reservation API from Deliverart — 10 operation(s) for reservation.
+- [Deliverart Take away API](https://apis.io/apis/deliverart/deliverart-take-away-api/) — The Take away API from Deliverart — 2 operation(s) for take away.
+- [Deliverart Work Shifts API](https://apis.io/apis/deliverart/deliverart-work-shifts-api/) — The Work Shifts API from Deliverart — 5 operation(s) for work shifts.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### MCP servers (1)
+
+Model Context Protocol servers that expose the API to agents.
+
+- [deliverart](https://apis.io/servers/deliverart/deliverart/)
+
+#### Agentic access (1)
+
+Which operations an agent can call, which act, and which need a human in the loop.
+
+- [Deliverart Agentic Access](https://apis.io/agentic-access/deliverart/deliverart-agentic-access/)
+
+#### Collections (16)
+
+Postman and Open Collection request collections.
+
+- [Deliverart Addresses API](https://apis.io/collections/deliverart/open-deliverart-addresses-api/)
+- [Deliverart Addresses Companies API](https://apis.io/collections/deliverart/open-deliverart-companies-api/)
+- [Deliverart Addresses Customer addresses API](https://apis.io/collections/deliverart/open-deliverart-customer-addresses-api/)
+- [Deliverart Addresses Customer business profiles API](https://apis.io/collections/deliverart/open-deliverart-customer-business-profiles-api/)
+- [Deliverart Addresses Customers API](https://apis.io/collections/deliverart/open-deliverart-customers-api/)
+- [Deliverart Addresses Deliveries API](https://apis.io/collections/deliverart/open-deliverart-deliveries-api/)
+- [Deliverart Addresses Delivery fee API](https://apis.io/collections/deliverart/open-deliverart-delivery-fee-api/)
+- [Deliverart Addresses Me API](https://apis.io/collections/deliverart/open-deliverart-me-api/)
+- [Deliverart Addresses Menu API](https://apis.io/collections/deliverart/open-deliverart-menu-api/)
+- [Deliverart Addresses Orders API](https://apis.io/collections/deliverart/open-deliverart-orders-api/)
+- [Deliverart Addresses Password reset API](https://apis.io/collections/deliverart/open-deliverart-password-reset-api/)
+- [Deliverart Addresses Points of sale API](https://apis.io/collections/deliverart/open-deliverart-points-of-sale-api/)
+- [Deliverart Addresses Registration API](https://apis.io/collections/deliverart/open-deliverart-registration-api/)
+- [Deliverart Addresses Reservation API](https://apis.io/collections/deliverart/open-deliverart-reservation-api/)
+- [Deliverart Addresses Take away API](https://apis.io/collections/deliverart/open-deliverart-take-away-api/)
+- [Deliverart Addresses Workshifts API](https://apis.io/collections/deliverart/open-deliverart-workshifts-api/)
+
+#### Overlays (1)
+
+OpenAPI overlays, including conversational phrasing for each operation.
+
+- [Deliverart Openapi Overlay](https://apis.io/overlays/deliverart/deliverart-openapi-overlay/)
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Deliverart Authentication](https://apis.io/security/deliverart/deliverart-authentication/)
+- [Deliverart Domain Security](https://apis.io/security/deliverart/deliverart-domain-security/)
+
+#### OAuth scopes (1)
+
+The permissions the API asks for.
+
+- [Deliverart Scopes](https://apis.io/scopes/deliverart/deliverart-scopes/)
+
+#### Plans and pricing (2)
+
+Published plans, tiers and prices.
+
+- [Deliverart Plans Pricing](https://apis.io/plans/deliverart/deliverart-plans-pricing/)
+- [Deliverart Price Estimates](https://apis.io/plans/deliverart/deliverart-price-estimates/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.deliverart.it/)
+- [Documentation](https://apidoc.deliverart.it/)
+- [Getting started](https://apidoc.deliverart.it/)
+- [API reference](https://apidoc.deliverart.it/)
+- [Pricing](https://www.deliverart.it/prezzi/)
+- [Sign up](https://www.deliverart.it/richiedi-la-demo/)
+- [Support](https://www.deliverart.it/chi-siamo/contatti/)
+- [Blog](https://www.deliverart.it/risorse/blog/)
+- [Privacy policy](https://www.iubenda.com/privacy-policy/8283529)
+
+## API Evangelist rating
+
+**Kin Score 50.1** — developing · rubric 0.25.0 · scored 2026-10-23
+
+| Facet | Score |
+|---|---|
+| Discoverability | 73.2 |
+| Contract quality | 49.0 |
+| Contract governance | 4.5 |
+| Operational transparency | 15.8 |
+| Developer ergonomics | 66.1 |
+| Access clarity | 65.8 |
+
+**Agent readiness 25.5** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | derived (partial credit) |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | verified |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | derived (partial credit) |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+| Pagination Ratio | na |
+| Operation Distinctiveness | distinct |
+
+**Regulatory alignment 30.4** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/deliverart/](https://apis.io/providers/deliverart/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Deliverart: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/deliverart/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
